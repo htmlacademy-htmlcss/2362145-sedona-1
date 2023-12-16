@@ -60,8 +60,33 @@
             </li>
           </ul>
         </header>
-    
+        <!-- форма в блоке -->
+        <form action="https://htmlacademy.ru/" class="catalog-filter" method="get">
+          <!-- секция выбора инфраструктуры -->
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Инфраструктура:</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="infrastructure">
+                  <input type="checkbox" name="pool" class="infrastructure-input">Бассейн
+                </label>
+              </li>
+
+              <li class="catalog-filter-item">
+                <label class="infrastructure">
+                  <input type="checkbox" name="parking" class="infrastructure-input">Парковка
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="infrastructure">
+                  <input type="checkbox" name="wi-fi" class="infrastructure-input">Wi-Fi
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
       </section>
+    </main>
   </body>
 
 </html>
