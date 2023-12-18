@@ -129,15 +129,24 @@
           <option value="costly">Сначала дорогие</option>
           <option value="popular">Сначала популярные</option>
         </select>
-        <a href="#" class="button button-card button">
-          <span class="visually-hidden">Показать карточки</span>
-        </a>
-        <a href="#" class="button button-box button">
-          <span class="visually-hidden">Показать боксы</span>
-        </a>
-        <a href="#" class="button button-list">
-          <span class="visually-hidden">Показать список</span>
-        </a>
+        <!-- список кнопок вида сортировки -->
+        <ul class="view-list">
+          <li class="button-item">
+            <button type="button" class="button button-card ">
+              <span class="visually-hidden">Показать карточки</span>
+            </button>
+          </li>
+          <li class="button-item">
+            <button type="button" class=" button button-box ">
+              <span class="visually-hidden">Показать боксы</span>
+            </button>
+          </li>
+          <li class="button-item">
+            <button type="button" class="button button-list">
+              <span class="visually-hidden">Показать список</span>
+            </button>
+          </li>
+        </ul>
         <!-- внутренний контейнер секции -->
         <div class="catalog-list-container">
           <ul class="catalog-list">
