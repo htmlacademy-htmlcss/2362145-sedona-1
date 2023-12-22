@@ -143,12 +143,12 @@ body {
   background-color: #756157;
 }
 
-.subscribe-section {
+.subscribe-section.on-index {
   color: #ffffff;
   background-color: darkgrey;
   background-image: url("/images/subscribe.jpg");
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: auto;
 }
 
 .subscribe-button {
@@ -179,4 +179,44 @@ body {
   line-height: 40px;
   text-decoration: none;
   color: #000000;
+}
+
+.hero-section {
+  color: #ffffff;
+  background-color: darkgrey;
+  background-image: url("/images/filter.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+
+.inner-header h1 {
+  font-size: 60px;
+  line-height: 78px;
+  color: inherit;
+  font-weight: 700;
+}
+
+.breadcrumbs-item {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.catalog-filter-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.catalog-filter-list {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+}
+
+.apply-button {
+  background-color: rgba(130, 179, 211, 1);
+}
+
+.reset-button {
+  background-color: rgba(255, 255, 255, 0);
 }

@@ -30,12 +30,12 @@
         </li>
       </ul>
       <ul class="navigation-list navigation-user">
-        <li class="navigation-item navigation-user-item">
+        <li class="navigation-item navigation-search-item">
           <a class="navigation-link navigation-user-link" href="#">
             <span class="visually-hidden">Поиск</span>
           </a>
         </li>
-        <li class="navigation-item navigation-user-item">
+        <li class="navigation-item navigation-favorite-item">
           <a class="navigation-link navigation-user-link" href="#">
             <span class="visually-hidden">Избранное</span>
           </a>
@@ -53,7 +53,7 @@
         <ul class="breadcrumbs">
           <li class="breadcrumbs-link">
             <a href="index.html" class="breadcrumbs-item">
-              <img src="#" alt="Главная страница">
+              <img src="images/icons/home.svg" width="13" height="15" alt="Главная страница">
             </a>
           </li>
           <li class="breadcrumbs-link">
@@ -124,30 +124,32 @@
     <!-- секция с карточками -->
     <section class="catalog-section">
       <!-- верхняя часть секции -->
-      <h2 class="section-heading">Найдено гостиниц: <span class="catalog-value-length">38</span></h2>
-      <select name="selected-sort-type" aria-label="Сортировка">
-        <option value="cheap">Сначала дешевые</option>
-        <option value="costly">Сначала дорогие</option>
-        <option value="popular">Сначала популярные</option>
-      </select>
-      <!-- список кнопок вида сортировки -->
-      <ul class="view-list">
-        <li class="button-item">
-          <button type="button" class="button button-card ">
-            <span class="visually-hidden">Показать карточки</span>
-          </button>
-        </li>
-        <li class="button-item">
-          <button type="button" class=" button button-box ">
-            <span class="visually-hidden">Показать боксы</span>
-          </button>
-        </li>
-        <li class="button-item">
-          <button type="button" class="button button-list">
-            <span class="visually-hidden">Показать список</span>
-          </button>
-        </li>
-      </ul>
+      <div class="top-catalog-section">
+        <h2 class="section-heading">Найдено гостиниц: <span class="catalog-value-length">38</span></h2>
+        <select name="selected-sort-type" aria-label="Сортировка">
+          <option value="cheap">Сначала дешевые</option>
+          <option value="costly">Сначала дорогие</option>
+          <option value="popular">Сначала популярные</option>
+        </select>
+        <!-- список кнопок вида сортировки -->
+        <ul class="view-list">
+          <li class="button-item">
+            <button type="button" class="button button-card ">
+              <span class="visually-hidden">Показать карточки</span>
+            </button>
+          </li>
+          <li class="button-item">
+            <button type="button" class=" button button-box ">
+              <span class="visually-hidden">Показать боксы</span>
+            </button>
+          </li>
+          <li class="button-item">
+            <button type="button" class="button button-list-show">
+              <span class="visually-hidden">Показать список</span>
+            </button>
+          </li>
+        </ul>
+      </div>
       <!-- внутренний контейнер секции -->
       <div class="catalog-list-container">
         <ul class="catalog-list">
@@ -156,7 +158,7 @@
             <a href="#" class="catalog-item-link">
               <img src="images/hotel-1.jpg" width="300" height="212" alt="Горы и звездное небо"
                 class="catalog-item-img">
-              <h3 class="h3-heading">Amara Resort & Spa</h3>
+              <h4 class="h3-heading">Amara Resort & Spa</h4>
             </a>
             <p class="card-paragraph">
               <span class="apartment-type">Гостиница</span>
@@ -180,7 +182,7 @@
             <a href="#" class="catalog-item-link">
               <img src="images/hotel-2.jpg" width="300" height="212" alt="Горы и звездное небо"
                 class="catalog-item-img">
-              <h3 class="h3-heading">Villas at Poco Diablo</h3>
+              <h4 class="h3-heading">Villas at Poco Diablo</h4>
             </a>
             <p class="card-paragraph">
               <span class="apartment-type">Гостиница</span>
@@ -204,7 +206,7 @@
             <a href="#" class="catalog-item-link">
               <img src="images/hotel-3.jpg" width="300" height="212" alt="Горы и звездное небо"
                 class="catalog-item-img">
-              <h3 class="h3-heading">Desert Quail Inn</h3>
+              <h4 class="h3-heading">Desert Quail Inn</h4>
             </a>
             <p class="card-paragraph">
               <span class="apartment-type">Гостиница</span>
@@ -228,7 +230,7 @@
             <a href="#" class="catalog-item-link">
               <img src="images/hotel-4.jpg" width="300" height="212" alt="Горы и звездное небо"
                 class="catalog-item-img">
-              <h3 class="h3-heading">GreenTree Inn</h3>
+              <h4 class="h3-heading">GreenTree Inn</h4>
             </a>
             <p class="card-paragraph">
               <span class="apartment-type">Гостиница</span>
