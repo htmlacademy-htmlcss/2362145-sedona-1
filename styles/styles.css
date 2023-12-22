@@ -30,7 +30,7 @@ body {
 }
 
 .visually-hidden {
-  display: none;
+  visibility: hidden;
 }
 
 .navigation-item a {
@@ -43,13 +43,13 @@ body {
   text-align: center;
 }
 
-.navigation-search-item {
+.navigation-search-item a {
   background-image: url("/images/icons/icon-search.svg");
   background-repeat: no-repeat;
   background-size: auto 100%;
 }
 
-.navigation-favorite-item {
+.navigation-favorite-item a {
   background-image: url("/images/icons/icon-favorite.svg");
   background-repeat: no-repeat;
   background-size: auto 100%;
