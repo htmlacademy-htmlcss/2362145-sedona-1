@@ -29,6 +29,10 @@ body {
   color: #000000;
 }
 
+.visually-hidden {
+  display: none;
+}
+
 .navigation-item a {
   font-size: 20px;
   line-height: 24px;
@@ -37,6 +41,16 @@ body {
   background-color: #ffffff;
   text-decoration: none;
   text-align: center;
+}
+
+.navigation-search-item {
+  background-image: url("/images/icons/icon-search.svg");
+  background-repeat: no-repeat;
+}
+
+.navigation-favorite-item {
+  background-image: url("/images/icons/icon-favorite.svg");
+  background-repeat: no-repeat;
 }
 
 .button {
@@ -98,16 +112,29 @@ body {
   color: #000000;
 }
 
-
-
 .advantages-list li:nth-child(2n) {
   background: rgba(131, 179, 211, 0.2);
   color: #000000;
 }
 
-.second-advantages-list li:nth-child(2n) {
+.second-advantages-list li:first-child {
+  background-image: url("/images/icons/house.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.second-advantages-list li:nth-child(2) {
   background-color: #ffffff;
   color: #000000;
+  background-image: url("/images/icons/food.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.second-advantages-list li:nth-child(3) {
+  background-image: url("/images/icons/present.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 
 .section-button {
@@ -122,3 +149,32 @@ body {
   background-size: auto;
 }
 
+.subscribe-button {
+  background-color: rgba(130, 179, 211, 1);
+}
+
+.footer-social-list li:first-child {
+  background-image: url("/images/icons/icon-vk.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.footer-social-list li:nth-child(2) {
+  background-image: url("/images/icons/icon-telegram.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.footer-social-list li:nth-child(3) {
+  background-image: url("/images/icons/icon-youtube.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.contact-address a {
+  font-style: normal;
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  color: #000000;
+}
