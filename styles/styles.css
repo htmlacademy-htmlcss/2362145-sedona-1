@@ -14,7 +14,15 @@
   src: url("/fonts/ptsans-700.woff2") format("woff2");
 }
 
+html {
+  background-color: rgba(242, 242, 242, 1);
+}
+
 body {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(255, 255, 255);
+  width: 1200px;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
@@ -56,8 +64,6 @@ body {
 .section-heading {
   text-transform: uppercase;
   text-align: center;
-  color: #000000;
-  background-color: #ffffff;
   font-weight: 700;
   line-height: 36px;
   font-size: 30px;
@@ -106,5 +112,13 @@ body {
 
 .section-button {
   background-color: #756157;
+}
+
+.subscribe-section {
+  color: #ffffff;
+  background-color: darkgrey;
+  background-image: url("/images/subscribe.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 
