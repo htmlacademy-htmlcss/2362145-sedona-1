@@ -45,8 +45,8 @@ body {
 }
 
 .main-hero {
-  height: 485px;
-  width: 1200px;
+  /* серый фон для читаемости если изображения не загрузятся */
+  background-color: darkgrey;
   background-image: url("/images/index-background.jpg");
   background-repeat: no-repeat;
   background-size: auto;
@@ -63,12 +63,16 @@ body {
   font-size: 30px;
 }
 
+.section-paragraph {
+  text-align: center;
+}
+
 .advantages-div {
   background-color: #82B3D3;
   color: #ffffff;
 }
 
-.advantages-section h3 {
+.advantages-item h3 {
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
@@ -76,9 +80,31 @@ body {
   line-height: 28px;
 }
 
-.advantages-list p {
+.advantages-item p {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
   text-align: center;
 }
+
+.advantages-list li:nth-child(1n) {
+  background-color: rgba(131, 179, 211, 0.12);
+  color: #000000;
+}
+
+
+
+.advantages-list li:nth-child(2n) {
+  background: rgba(131, 179, 211, 0.2);
+  color: #000000;
+}
+
+.second-advantages-list li:nth-child(2n) {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.section-button {
+  background-color: #756157;
+}
+
