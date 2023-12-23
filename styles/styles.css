@@ -46,13 +46,13 @@ body {
 .navigation-search-item a {
   background-image: url("/images/icons/icon-search.svg");
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: auto auto;
 }
 
 .navigation-favorite-item a {
   background-image: url("/images/icons/icon-favorite.svg");
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: auto auto;
 }
 
 .button {
@@ -73,8 +73,9 @@ body {
   background-color: darkgrey;
   background-image: url("/images/index-background.jpg");
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: auto auto;
   background-position: center, center;
+  width: 1200px;
 }
 
 .section-heading {
@@ -122,7 +123,7 @@ body {
 .second-advantages-list li:first-child {
   background-image: url("/images/icons/house.svg");
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: auto auto;
 }
 
 .second-advantages-list li:nth-child(2) {
@@ -130,13 +131,13 @@ body {
   color: #000000;
   background-image: url("/images/icons/food.svg");
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: auto auto;
 }
 
 .second-advantages-list li:nth-child(3) {
   background-image: url("/images/icons/present.svg");
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: auto auto;
 }
 
 .section-button {
@@ -158,19 +159,19 @@ body {
 .footer-social-list li:first-child {
   background-image: url("/images/icons/icon-vk.svg");
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: auto auto;
 }
 
 .footer-social-list li:nth-child(2) {
   background-image: url("/images/icons/icon-telegram.svg");
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: auto auto;
 }
 
 .footer-social-list li:nth-child(3) {
   background-image: url("/images/icons/icon-youtube.svg");
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: auto auto;
 }
 
 .contact-address a {
@@ -186,7 +187,7 @@ body {
   background-color: darkgrey;
   background-image: url("/images/filter.jpg");
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: auto auto;
 }
 
 .inner-header h1 {
@@ -224,20 +225,21 @@ body {
 .button-card {
   background-image: url("/images/icons/View-icon.svg");
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: auto auto;
 }
 
 .button-box {
   background-image: url("/images/icons/View-icon-1.svg");
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: auto auto;
 }
 
 .button-list-show {
   background-image: url("/images/icons/View-icon-2.svg");
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: auto auto;
 }
+
 .catalog-item {
   border: 1px solid rgba(230, 230, 230, 1);
 
@@ -277,7 +279,7 @@ body {
   font-weight: 700;
 }
 
-.pagination-item a{
+.pagination-item a {
   color: inherit;
   text-decoration: none;
 }
