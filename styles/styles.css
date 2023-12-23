@@ -220,3 +220,52 @@ body {
 .reset-button {
   background-color: rgba(255, 255, 255, 0);
 }
+
+.button-card {
+  background-image: url("/images/icons/View-icon.svg");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+
+.button-box {
+  background-image: url("/images/icons/View-icon-1.svg");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+
+.button-list-show {
+  background-image: url("/images/icons/View-icon-2.svg");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+.catalog-item {
+  border: 1px solid rgba(230, 230, 230, 1);
+
+}
+
+.catalog-item a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.card-paragraph span {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.more-details {
+  background-color: rgba(117, 97, 87, 1);
+}
+
+.favorite {
+  background-color: rgba(130, 179, 211, 1)
+}
+
+.rating-value-div {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
