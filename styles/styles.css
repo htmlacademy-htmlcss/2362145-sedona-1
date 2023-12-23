@@ -268,4 +268,34 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  background-color: rgba(242, 242, 242, 1);
+}
+
+.pagination-row {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.pagination-item a{
+  color: inherit;
+  text-decoration: none;
+}
+
+.pagination-row li {
+  color: #ffffff;
+  background-color: rgba(130, 179, 211, 1);
+}
+
+.pagination-row li:first-child {
+  color: #000000;
+  background-color: rgba(242, 242, 242, 1);
+}
+
+.pagination-row li:nth-child(5) {
+  color: #000000;
+  background-color: rgba(242, 242, 242, 1);
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
 }
