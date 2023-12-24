@@ -57,18 +57,6 @@ body {
   text-align: center;
 }
 
-.navigation-search-item a {
-  background-image: url("/images/icons/icon-search.svg");
-  background-repeat: no-repeat;
-  background-size: auto auto;
-}
-
-.navigation-favorite-item a {
-  background-image: url("/images/icons/icon-favorite.svg");
-  background-repeat: no-repeat;
-  background-size: auto auto;
-}
-
 .button {
   font-family: inherit;
   color: #ffffff;
@@ -178,24 +166,6 @@ body {
   list-style: none;
 }
 
-.footer-social-list li:first-child {
-  background-image: url("/images/icons/icon-vk.svg");
-  background-repeat: no-repeat;
-  background-size: auto auto;
-}
-
-.footer-social-list li:nth-child(2) {
-  background-image: url("/images/icons/icon-telegram.svg");
-  background-repeat: no-repeat;
-  background-size: auto auto;
-}
-
-.footer-social-list li:nth-child(3) {
-  background-image: url("/images/icons/icon-youtube.svg");
-  background-repeat: no-repeat;
-  background-size: auto auto;
-}
-
 .contact-address a {
   font-style: normal;
   font-size: 40px;
@@ -251,24 +221,6 @@ body {
 
 .button-item {
   list-style: none;
-}
-
-.button-card {
-  background-image: url("/images/icons/View-icon.svg");
-  background-repeat: no-repeat;
-  background-size: auto auto;
-}
-
-.button-box {
-  background-image: url("/images/icons/View-icon-1.svg");
-  background-repeat: no-repeat;
-  background-size: auto auto;
-}
-
-.button-list-show {
-  background-image: url("/images/icons/View-icon-2.svg");
-  background-repeat: no-repeat;
-  background-size: auto auto;
 }
 
 .catalog-item {
