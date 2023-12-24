@@ -110,13 +110,19 @@ body {
   text-align: center;
 }
 
-.advantages-list li:nth-child(1n) {
+.advantages-list li:nth-child(odd) {
   background-color: rgba(131, 179, 211, 0.12);
   color: inherit;
 }
 
-.advantages-list li:nth-child(2n) {
+.advantages-list li:nth-child(even) {
   background: rgba(131, 179, 211, 0.2);
+  color: inherit;
+}
+
+
+.second-advantages-list li:nth-child(even) {
+  background-color: #ffffff;
   color: inherit;
 }
 
@@ -127,8 +133,6 @@ body {
 }
 
 .second-advantages-list li:nth-child(2) {
-  background-color: #ffffff;
-  color: inherit;
   background-image: url("/images/icons/food.svg");
   background-repeat: no-repeat;
   background-size: auto auto;
