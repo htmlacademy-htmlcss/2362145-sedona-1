@@ -1,28 +1,22 @@
 @font-face {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-display: swap;
   font-weight: 400;
   font-style: normal;
-  src: url("/fonts/ptsans-400.woff2") format("woff2");
+  src: local("PT Sans"),
+      url("/fonts/ptsans-400.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-display: swap;
   font-weight: 700;
   font-style: normal;
-  src: url("/fonts/ptsans-700.woff2") format("woff2");
-}
-
-html {
-  background-color: rgba(242, 242, 242, 1);
+  src: local("PT Sans"),
+      url("/fonts/ptsans-700.woff2") format("woff2");
 }
 
 body {
-  margin-left: auto;
-  margin-right: auto;
-  background-color: rgb(255, 255, 255);
-  width: 1200px;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
@@ -51,7 +45,7 @@ body {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  color: #000000;
+  color: inherit;
   background-color: #ffffff;
   text-decoration: none;
   text-align: center;
@@ -118,12 +112,12 @@ body {
 
 .advantages-list li:nth-child(1n) {
   background-color: rgba(131, 179, 211, 0.12);
-  color: #000000;
+  color: inherit;
 }
 
 .advantages-list li:nth-child(2n) {
   background: rgba(131, 179, 211, 0.2);
-  color: #000000;
+  color: inherit;
 }
 
 .second-advantages-list li:first-child {
@@ -134,7 +128,7 @@ body {
 
 .second-advantages-list li:nth-child(2) {
   background-color: #ffffff;
-  color: #000000;
+  color: inherit;
   background-image: url("/images/icons/food.svg");
   background-repeat: no-repeat;
   background-size: auto auto;
@@ -171,7 +165,7 @@ body {
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
-  color: #000000;
+  color: inherit;
 }
 
 .hero-section {
@@ -275,12 +269,12 @@ body {
 }
 
 .pagination-row li:first-child {
-  color: #000000;
+  color: inherit;
   background-color: rgba(242, 242, 242, 1);
 }
 
 .pagination-row li:nth-child(5) {
-  color: #000000;
+  color: inherit;
   background-color: rgba(242, 242, 242, 1);
   font-size: 22px;
   line-height: 26px;
