@@ -1,0 +1,294 @@
+@font-face {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+  src: local("PT Sans"),
+    url("/fonts/ptsans-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+  src: local("PT Sans"),
+    url("/fonts/ptsans-700.woff2") format("woff2");
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  background-color: rgba(242, 242, 242, 1);
+}
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(255, 255, 255);
+  width: 1200px;
+}
+
+.visually-hidden {
+  /* position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; */
+}
+
+.navigation-item {
+  list-style: none;
+}
+
+.navigation-item a {
+  list-style: none;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: inherit;
+  background-color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+}
+
+.button {
+  font-family: inherit;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.header-button {
+  background-color: #756157;
+}
+
+.main-hero {
+  /* серый фон для читаемости если изображения не загрузятся */
+  background-color: darkgrey;
+  background-image: url("/images/index-background.jpg");
+  background-repeat: no-repeat;
+  background-size: auto auto;
+  background-position: center, center;
+  width: 1200px;
+}
+
+.section-heading {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  line-height: 36px;
+  font-size: 30px;
+}
+
+.section-paragraph {
+  text-align: center;
+}
+
+.advantages-div {
+  background-color: #82B3D3;
+  color: #ffffff;
+}
+
+.advantages-item {
+  list-style: none;
+}
+
+.advantages-item h3 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.advantages-item p {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.advantages-list li:nth-child(odd) {
+  background-color: rgba(131, 179, 211, 0.12);
+  color: inherit;
+}
+
+.advantages-list li:nth-child(even) {
+  background: rgba(131, 179, 211, 0.2);
+  color: inherit;
+}
+
+
+.second-advantages-list li:nth-child(even) {
+  background-color: #ffffff;
+  color: inherit;
+}
+
+.second-advantages-list li:first-child {
+  background-image: url("/images/icons/house.svg");
+  background-repeat: no-repeat;
+  background-size: auto auto;
+}
+
+.second-advantages-list li:nth-child(2) {
+  background-image: url("/images/icons/food.svg");
+  background-repeat: no-repeat;
+  background-size: auto auto;
+}
+
+.second-advantages-list li:nth-child(3) {
+  background-image: url("/images/icons/present.svg");
+  background-repeat: no-repeat;
+  background-size: auto auto;
+}
+
+.section-button {
+  background-color: #756157;
+}
+
+.subscribe-section.on-index {
+  color: #ffffff;
+  background-color: darkgrey;
+  background-image: url("/images/subscribe.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.subscribe-button {
+  background-color: rgba(130, 179, 211, 1);
+}
+
+.footer-social-item {
+  list-style: none;
+}
+
+.contact-address a {
+  font-style: normal;
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.hero-section {
+  color: #ffffff;
+  background-color: darkgrey;
+  background-image: url("/images/filter.jpg");
+  background-repeat: no-repeat;
+  background-size: auto auto;
+}
+
+.inner-header h1 {
+  font-size: 60px;
+  line-height: 78px;
+  color: inherit;
+  font-weight: 700;
+}
+
+.breadcrumbs-link {
+  list-style: none;
+}
+
+.breadcrumbs-item {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.catalog-filter-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.catalog-filter-list {
+  list-style: none;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+}
+
+.apply-button {
+  background-color: rgba(130, 179, 211, 1);
+}
+
+.reset-button {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.button-item {
+  list-style: none;
+}
+
+.catalog-item {
+  list-style: none;
+  border: 1px solid rgba(230, 230, 230, 1);
+
+}
+
+.catalog-item a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.card-paragraph span {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.more-details {
+  background-color: rgba(117, 97, 87, 1);
+}
+
+.favorite {
+  background-color: rgba(130, 179, 211, 1)
+}
+
+.rating-value-div {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: rgba(242, 242, 242, 1);
+}
+
+.pagination-row {
+  list-style: none;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.pagination-item a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.pagination-row li {
+  color: #ffffff;
+  background-color: rgba(130, 179, 211, 1);
+}
+
+.pagination-row li:first-child {
+  color: inherit;
+  background-color: rgba(242, 242, 242, 1);
+}
+
+.pagination-row li:nth-child(5) {
+  color: inherit;
+  background-color: rgba(242, 242, 242, 1);
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+}
