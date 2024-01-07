@@ -16,7 +16,15 @@
     url("/fonts/ptsans-700.woff2") format("woff2");
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
@@ -70,6 +78,10 @@ body {
 
 .header-button {
   background-color: #756157;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .main-hero {
