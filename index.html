@@ -16,46 +16,48 @@
 
       <!-- шапка -->
       <header class="main-header">
-        <a href="#">
-          <img src="images/logo.svg" width="140" height="70" alt="Логотип" class="logo">
-        </a>
         <nav class="navigation">
-          <ul class="navigation-list">
-            <li class="navigation-item navigation-item-active">
-              <a class="navigation-link">Главная</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link">О Седоне</a>
-            </li>
-            <li class="navigation-item">
-              <a href="catalog.html" class="navigation-link">Гостиницы</a>
-            </li>
-          </ul>
-          <ul class="navigation-list navigation-user">
-            <li class="navigation-item navigation-search-item">
-              <a class="navigation-link navigation-user-link" href="#">
-                <span class="visually-hidden">Поиск</span>
-              </a>
-            </li>
-            <li class="navigation-item navigation-favorite-item">
-              <a class="navigation-link navigation-user-link" href="#">
-                <span class="visually-hidden">Избранное</span>
-              </a>
-            </li>
-          </ul>
+          <a href="#">
+            <img src="images/logo.svg" width="140" height="70" alt="Логотип" class="logo">
+          </a>
+          <div class="navigation-catalog">
+            <ul class="navigation-list">
+              <li class="navigation-item navigation-item-active">
+                <a class="navigation-link">Главная</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link">О Седоне</a>
+              </li>
+              <li class="navigation-item">
+                <a href="catalog.html" class="navigation-link">Гостиницы</a>
+              </li>
+            </ul>
+            <ul class="navigation-list navigation-user">
+              <li class="navigation-item navigation-search-item">
+                <a class="navigation-link navigation-user-link" href="#">
+                  <span class="visually-hidden">Поиск</span>
+                </a>
+              </li>
+              <li class="navigation-item navigation-favorite-item">
+                <a class="navigation-link navigation-user-link" href="#">
+                  <span class="visually-hidden">Избранное</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <button class="header-button button" name="hotel-search-button button" type="button">Хочу сюда!</button>
         </nav>
-        <button class="header-button button" name="hotel-search-button button" type="button">Хочу сюда!</button>
       </header>
       <main class="main-container main-index">
         <!-- Блок "Герой" -->
         <h1 class="visually-hidden">Седона</h1>
         <section class="main-hero">
-          <img src="images/welcome.png" width="457" height="352"
+          <img class="hero-logo" src="images/welcome.png" width="457" height="352"
             alt="Weclome to the gorgeous Sedona. Because the grand canyon sucks">
         </section>
         <!-- секция с преимуществами -->
         <section class="advantages-section">
-          <h2 class="section-heading">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <h2 class="section-heading">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
           <p class="section-paragraph">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
           <!-- верхний ряд боксов -->
           <div class="advantages-div top-advantages-div">
@@ -84,14 +86,14 @@
           <div class="advantages-div bottom-advantages-div">
             <img src="images/photo-2.jpg" width="800" height="385" alt="Мост дьявола">
             <div class="advantages-item">
-              <h3>Там есть мост дьявола</h3>
+              <h3>Там есть<br>мост дьявола</h3>
               <p class="advantages-paragraph">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </div>
           </div>
         </section>
         <!-- вторая секция с преимуществами (боксы без фото)-->
         <section class="advantages-section second-advantages-section">
-          <h2 class="section-heading">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+          <h2 class="section-heading">Приезжайте в Седону отдохнуть<br>в комфорте и уюте!</h2>
           <p class="section-paragraph">Опытный персонал и качественное обслуживание!</p>
           <ul class="advantages-list second-advantages-list">
             <li class="advantages-item">
@@ -111,9 +113,8 @@
         <!-- нижняя секция поиска отеля -->
         <section class="hotel-search-section">
           <h2 class="section-heading">Заинтерисовались?</h2>
-          <p class="section-paragraph">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения
-            гостиниц в
-            Седоне
+          <p class="section-paragraph">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц
+            в Седоне
           </p>
           <button class="section-button button" name="hotel-search-button button" type="button">Поиск гостиницы в
             Седоне</button>
@@ -121,7 +122,7 @@
         <!-- секция подписки -->
         <section class="subscribe-section on-index">
           <h2 class="section-heading">Подпишитесь на рассылку?</h2>
-          <p class="section-paragraph">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="section-paragraph">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <input type="email" id="subsribe-value" name="subscribe-input" placeholder="Ваш e-mail">
             <button class="subscribe-button button" type="submit">Подписаться</button>
