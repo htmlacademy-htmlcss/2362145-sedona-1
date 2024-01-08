@@ -240,22 +240,27 @@ body {
 .subscribe-button {
   background-color: rgba(130, 179, 211, 1);
 }
+
 .footer-container {
   width: 1060px;
   margin: 40px 70px;
   display: flex;
   justify-content: space-between;
 }
+
 .contacts-footer {
   max-width: 225px;
 }
+
 .footer-social-item {
   list-style: none;
 }
+
 .phone-footer {
   width: 720px;
   text-align: center;
 }
+
 .contact-address a {
   font-style: normal;
   font-size: 40px;
@@ -263,10 +268,12 @@ body {
   text-decoration: none;
   color: inherit;
 }
+
 .logo-footer {
   width: 115px;
   margin-left: auto;
 }
+
 .hero-section {
   color: #ffffff;
   background-color: darkgrey;
