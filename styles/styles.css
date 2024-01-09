@@ -258,13 +258,13 @@ body {
 
 .footer-container {
   width: 1060px;
-  margin: 40px 70px;
+  margin: 40px 70px 30px;
   display: flex;
   justify-content: space-between;
 }
 
 .contacts-footer {
-  max-width: 225px;
+  width: 225px;
 }
 
 .footer-social-item {
