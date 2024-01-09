@@ -110,12 +110,9 @@ body {
   border-radius: 4px;
 }
 
-.header-button-container {
+.header-button {
   display: flex;
   width: auto;
-}
-
-.header-button {
   padding: 8px 34px;
   margin: auto 0;
   background-color: #756157;
