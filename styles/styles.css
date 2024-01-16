@@ -39,7 +39,7 @@ body {
 }
 
 .visually-hidden {
-  /* position: absolute;
+  position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -48,7 +48,7 @@ body {
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  overflow: hidden; */
+  overflow: hidden;
 }
 
 .navigation {
@@ -292,7 +292,6 @@ body {
   background-repeat: no-repeat;
   background-size: auto auto;
   padding: 35px 70px 70px;
-
 }
 
 .inner-header h1 {
@@ -325,6 +324,21 @@ body {
   width: 1060px;
 }
 
+.first-filter-container {
+  width: 370px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.second-filter-container {
+  width: 550px;
+  display: flex;
+}
+
+.button-filter {
+  width: 150px;
+}
+
 .catalog-filter-title {
   font-size: 20px;
   line-height: 24px;
@@ -346,6 +360,11 @@ body {
   border: 0;
 }
 
+.catalog-filter-button {
+  display: flex;
+  flex-direction: column;
+}
+
 .apply-button {
   background-color: rgba(130, 179, 211, 1);
 }
@@ -356,6 +375,11 @@ body {
 
 .button-item {
   list-style: none;
+}
+
+.catalog-section {
+  width: 1060px;
+  margin: 50px 70px 60px 70px;
 }
 
 .catalog-item {
