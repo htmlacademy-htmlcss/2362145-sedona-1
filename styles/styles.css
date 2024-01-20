@@ -35,7 +35,7 @@ body {
 .wrapper {
   margin: 0 auto;
   background-color: rgb(255, 255, 255);
-  width: 1200px;
+  min-width: 1200px;
 }
 
 .visually-hidden {
@@ -53,7 +53,7 @@ body {
 
 .navigation {
   display: flex;
-  width: 1060px;
+  min-width: 1060px;
   margin: 0 70px;
   justify-content: space-between;
 }
@@ -73,7 +73,7 @@ body {
 .navigation-list {
   display: flex;
   padding: 0;
-  width: 500px;
+  min-width: 500px;
   margin-right: auto;
 }
 
@@ -82,7 +82,7 @@ body {
 }
 
 .navigation-user {
-  width: 200px;
+  min-width: 200px;
   justify-content: flex-end;
 }
 
@@ -111,7 +111,6 @@ body {
 
 .header-button {
   display: flex;
-  width: auto;
   padding: 8px 34px;
   margin: auto 0;
   background-color: #756157;
@@ -127,7 +126,7 @@ body {
   background-repeat: no-repeat;
   background-size: auto auto;
   background-position: center, center;
-  width: 1200px;
+  min-width: 1200px;
   height: 485px;
   display: flex;
 }
@@ -163,7 +162,7 @@ body {
 .advantages-item {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  min-width: 400px;
   height: 385px;
   list-style: none;
   justify-content: center;
@@ -175,7 +174,7 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  width: 175px;
+  max-width: 175px;
   align-self: center;
 }
 
@@ -184,7 +183,7 @@ body {
   line-height: 21px;
   font-weight: 400;
   text-align: center;
-  width: 230px;
+  max-width: 230px;
   align-self: center;
 }
 
@@ -253,14 +252,14 @@ body {
 }
 
 .footer-container {
-  width: 1060px;
+  min-width: 1060px;
   margin: 40px 70px 30px;
   display: flex;
   justify-content: space-between;
 }
 
 .contacts-footer {
-  width: 225px;
+  min-width: 225px;
 }
 
 .footer-social-item {
@@ -268,7 +267,7 @@ body {
 }
 
 .phone-footer {
-  width: 720px;
+  min-width: 720px;
   text-align: center;
 }
 
@@ -281,7 +280,7 @@ body {
 }
 
 .logo-footer {
-  width: 115px;
+  min-width: 115px;
   margin-left: auto;
 }
 
@@ -321,22 +320,22 @@ body {
 
 .catalog-filter {
   display: flex;
-  width: 1060px;
+  min-width: 1060px;
 }
 
 .first-filter-container {
-  width: 370px;
+  min-width: 370px;
   display: flex;
   justify-content: space-between;
 }
 
 .second-filter-container {
-  width: 550px;
+  min-width: 550px;
   display: flex;
 }
 
 .button-filter {
-  width: 150px;
+  min-width: 150px;
 }
 
 .catalog-filter-title {
@@ -378,7 +377,7 @@ body {
 }
 
 .catalog-section {
-  width: 1060px;
+  min-width: 1060px;
   margin: 50px 70px 60px 70px;
 }
 
