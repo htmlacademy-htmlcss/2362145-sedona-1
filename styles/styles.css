@@ -16,7 +16,15 @@
     url("/fonts/ptsans-700.woff2") format("woff2");
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
@@ -25,14 +33,13 @@ body {
 }
 
 .wrapper {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   background-color: rgb(255, 255, 255);
-  width: 1200px;
+  min-width: 1200px;
 }
 
 .visually-hidden {
-  /* position: absolute;
+  position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -41,11 +48,42 @@ body {
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  overflow: hidden; */
+  overflow: hidden;
+}
+
+.navigation {
+  display: flex;
+  min-width: 1060px;
+  margin: 0 70px;
+  justify-content: space-between;
 }
 
 .navigation-item {
   list-style: none;
+  padding-inline: 15px;
+}
+
+.navigation-catalog {
+  margin-left: 30px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-list {
+  display: flex;
+  padding: 0;
+  min-width: 500px;
+  margin-right: auto;
+}
+
+.navigation-list:last-child {
+  margin-right: 0;
+}
+
+.navigation-user {
+  min-width: 200px;
+  justify-content: flex-end;
 }
 
 .navigation-item a {
@@ -66,20 +104,35 @@ body {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
+  border: 0;
+  padding: 8px 50px;
+  border-radius: 4px;
 }
 
 .header-button {
+  display: flex;
+  padding: 8px 34px;
+  margin: auto 0;
   background-color: #756157;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
 .main-hero {
-  /* серый фон для читаемости если изображения не загрузятся */
   background-color: darkgrey;
   background-image: url("/images/index-background.jpg");
   background-repeat: no-repeat;
   background-size: auto auto;
   background-position: center, center;
-  width: 1200px;
+  min-width: 1200px;
+  height: 485px;
+  display: flex;
+}
+
+.hero-logo {
+  margin: 50px auto auto;
 }
 
 .section-heading {
@@ -97,10 +150,22 @@ body {
 .advantages-div {
   background-color: #82B3D3;
   color: #ffffff;
+  display: flex;
+}
+
+.advantages-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
 }
 
 .advantages-item {
+  display: flex;
+  flex-direction: column;
+  min-width: 400px;
+  height: 385px;
   list-style: none;
+  justify-content: center;
 }
 
 .advantages-item h3 {
@@ -109,6 +174,8 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  max-width: 175px;
+  align-self: center;
 }
 
 .advantages-item p {
@@ -116,6 +183,8 @@ body {
   line-height: 21px;
   font-weight: 400;
   text-align: center;
+  max-width: 230px;
+  align-self: center;
 }
 
 .advantages-list li:nth-child(odd) {
@@ -152,8 +221,22 @@ body {
   background-size: auto auto;
 }
 
+.hotel-search-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .section-button {
   background-color: #756157;
+}
+
+.subscribe-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 415px;
+  justify-content: center;
 }
 
 .subscribe-section.on-index {
@@ -168,8 +251,24 @@ body {
   background-color: rgba(130, 179, 211, 1);
 }
 
+.footer-container {
+  min-width: 1060px;
+  margin: 40px 70px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts-footer {
+  min-width: 225px;
+}
+
 .footer-social-item {
   list-style: none;
+}
+
+.phone-footer {
+  min-width: 720px;
+  text-align: center;
 }
 
 .contact-address a {
@@ -180,12 +279,18 @@ body {
   color: inherit;
 }
 
-.hero-section {
+.logo-footer {
+  min-width: 115px;
+  margin-left: auto;
+}
+
+.filter-section {
   color: #ffffff;
   background-color: darkgrey;
   background-image: url("/images/filter.jpg");
   background-repeat: no-repeat;
   background-size: auto auto;
+  padding: 35px 70px 70px;
 }
 
 .inner-header h1 {
@@ -193,6 +298,15 @@ body {
   line-height: 78px;
   color: inherit;
   font-weight: 700;
+  margin: 8px 0 8px;
+}
+
+.breadcrumbs {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 40px;
+  margin-right: auto;
+  display: flex;
 }
 
 .breadcrumbs-link {
@@ -202,6 +316,26 @@ body {
 .breadcrumbs-item {
   font-size: 16px;
   line-height: 21px;
+}
+
+.catalog-filter {
+  display: flex;
+  min-width: 1060px;
+}
+
+.first-filter-container {
+  min-width: 370px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.second-filter-container {
+  min-width: 550px;
+  display: flex;
+}
+
+.button-filter {
+  min-width: 150px;
 }
 
 .catalog-filter-title {
@@ -215,6 +349,19 @@ body {
   font-size: 18px;
   line-height: 23px;
   font-weight: 400;
+  padding: 0;
+  margin-top: 32px;
+}
+
+.catalog-filter-group {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.catalog-filter-button {
+  display: flex;
+  flex-direction: column;
 }
 
 .apply-button {
@@ -227,6 +374,11 @@ body {
 
 .button-item {
   list-style: none;
+}
+
+.catalog-section {
+  min-width: 1060px;
+  margin: 50px 70px 60px 70px;
 }
 
 .catalog-item {
