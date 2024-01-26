@@ -36,6 +36,7 @@ body {
   margin: 0 auto;
   background-color: rgb(255, 255, 255);
   min-width: 1200px;
+  flex-grow: 1;
 }
 
 .visually-hidden {
