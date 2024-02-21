@@ -167,12 +167,12 @@ body {
   font-weight: 700;
   line-height: 36px;
   font-size: 30px;
-  margin-block-end: 20px;
-  margin-block-start: 0px;
+  margin-bottom: 20px;
+    margin-top: 0px;
 }
 
 .section-paragraph {
-  margin: auto 0;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -205,8 +205,8 @@ body {
   line-height: 28px;
   max-width: 175px;
   align-self: center;
-  margin-block-start: 0;
-  margin-block-end: 62px;
+  margin-top: 0;
+    margin-bottom: 62px;
 }
 
 .advantages-item p {
@@ -216,6 +216,13 @@ body {
   text-align: center;
   max-width: 230px;
   align-self: center;
+  margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .second-advantages-item h3 {
+    margin-top: 102px;
+    margin-bottom: 30px;
 }
 
 .advantages-list li:nth-child(odd) {
@@ -239,24 +246,34 @@ body {
   background-repeat: no-repeat;
   background-size: auto auto;
   background-position: top;
+  background-position-y: 81px;
 }
 
 .second-advantages-list li:nth-child(2) {
   background-image: url("/images/icons/food.svg");
   background-repeat: no-repeat;
   background-size: auto auto;
+  background-position: top;
+    background-position-y: 81px;
 }
 
 .second-advantages-list li:nth-child(3) {
   background-image: url("/images/icons/present.svg");
   background-repeat: no-repeat;
   background-size: auto auto;
+  background-position: top;
+    background-position-y: 81px;
 }
 
 .hotel-search-section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-block: 96px;
+  }
+
+  .hotel-search-section p {
+    margin-bottom: 54px;
 }
 
 .section-button {
@@ -271,6 +288,9 @@ body {
   justify-content: center;
 }
 
+.subscribe-section p {
+  margin-bottom: 54px;
+}
 .subscribe-section.on-index {
   color: #ffffff;
   background-color: darkgrey;
@@ -294,8 +314,15 @@ body {
   min-width: 225px;
 }
 
-.footer-social-item {
+.footer-social-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  displa
+}
+.footer-social-item {
+min-width: 47px;
+min-height: 40px;
 }
 
 .phone-footer {
@@ -330,7 +357,8 @@ body {
   line-height: 78px;
   color: inherit;
   font-weight: 700;
-  margin: 8px 0 8px;
+  margin: 0;
+    margin-bottom: 8px;
 }
 
 .breadcrumbs {
