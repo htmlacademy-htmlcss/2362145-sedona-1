@@ -64,6 +64,10 @@ body {
   justify-content: space-between;
 }
 
+.navigation a {
+  height: 64px;
+}
+
 .navigation-item {
   display: flex;
   margin: 0;
@@ -168,7 +172,7 @@ body {
   line-height: 36px;
   font-size: 30px;
   margin-bottom: 20px;
-    margin-top: 0px;
+  margin-top: 0px;
 }
 
 .section-paragraph {
@@ -206,7 +210,7 @@ body {
   max-width: 175px;
   align-self: center;
   margin-top: 0;
-    margin-bottom: 62px;
+  margin-bottom: 62px;
 }
 
 .advantages-item p {
@@ -217,12 +221,12 @@ body {
   max-width: 230px;
   align-self: center;
   margin-top: 0;
-    margin-bottom: 0;
-  }
+  margin-bottom: 0;
+}
 
-  .second-advantages-item h3 {
-    margin-top: 102px;
-    margin-bottom: 30px;
+.second-advantages-item h3 {
+  margin-top: 102px;
+  margin-bottom: 30px;
 }
 
 .advantages-list li:nth-child(odd) {
@@ -254,7 +258,7 @@ body {
   background-repeat: no-repeat;
   background-size: auto auto;
   background-position: top;
-    background-position-y: 81px;
+  background-position-y: 81px;
 }
 
 .second-advantages-list li:nth-child(3) {
@@ -262,7 +266,7 @@ body {
   background-repeat: no-repeat;
   background-size: auto auto;
   background-position: top;
-    background-position-y: 81px;
+  background-position-y: 81px;
 }
 
 .hotel-search-section {
@@ -270,10 +274,10 @@ body {
   flex-direction: column;
   align-items: center;
   margin-block: 96px;
-  }
+}
 
-  .hotel-search-section p {
-    margin-bottom: 54px;
+.hotel-search-section p {
+  margin-bottom: 54px;
 }
 
 .section-button {
@@ -291,6 +295,7 @@ body {
 .subscribe-section p {
   margin-bottom: 54px;
 }
+
 .subscribe-section.on-index {
   color: #ffffff;
   background-color: darkgrey;
@@ -316,13 +321,17 @@ body {
 
 .footer-social-list {
   list-style: none;
-  margin: 0;
+  margin-block: 5px;
   padding: 0;
-  displa
+  display: flex;
+  flex-wrap: wrap;
 }
-.footer-social-item {
-min-width: 47px;
-min-height: 40px;
+
+.footer-social-item a{
+  min-width: 47px;
+  min-height: 40px;
+  display: block;
+  box-sizing: border-box;
 }
 
 .phone-footer {
@@ -330,7 +339,12 @@ min-height: 40px;
   text-align: center;
 }
 
+address.contact-address {
+  display: flex;
+}
+
 .contact-address a {
+  margin: 5px auto;
   font-style: normal;
   font-size: 40px;
   line-height: 40px;
@@ -338,9 +352,20 @@ min-height: 40px;
   color: inherit;
 }
 
-.logo-footer {
+.logo-footer a {
+  display: block;
+  box-sizing: border-box;
   min-width: 115px;
+  min-height: 33px;
   margin-left: auto;
+  margin-block: auto;
+}
+
+.logo-footer img {
+  display: block;
+  box-sizing: content-box;
+  padding-block: 9px;
+  padding-left: 42px;
 }
 
 .filter-section {
@@ -358,7 +383,7 @@ min-height: 40px;
   color: inherit;
   font-weight: 700;
   margin: 0;
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .breadcrumbs {
