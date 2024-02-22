@@ -64,8 +64,9 @@ body {
   justify-content: space-between;
 }
 
-.navigation a {
+.navigation > a {
   height: 64px;
+  z-index: 1;
 }
 
 .navigation-item {
@@ -327,11 +328,29 @@ body {
   flex-wrap: wrap;
 }
 
-.footer-social-item a{
+.footer-social-item a {
   min-width: 47px;
   min-height: 40px;
   display: block;
   box-sizing: border-box;
+}
+
+.footer-social-list li:first-child {
+  background-image: url("/images/icons/icon-vk.svg");
+  background-repeat: no-repeat;
+  background-size: auto auto;
+}
+
+.footer-social-list li:nth-child(2) {
+  background-image: url("/images/icons/icon-telegram.svg");
+  background-repeat: no-repeat;
+  background-size: auto auto;
+}
+
+.footer-social-list li:nth-child(3) {
+  background-image: url("/images/icons/icon-youtube.svg");
+  background-repeat: no-repeat;
+  background-size: auto auto;
 }
 
 .phone-footer {
