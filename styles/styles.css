@@ -411,12 +411,16 @@ address.contact-address {
   margin-bottom: 40px;
   margin-right: auto;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .breadcrumbs-link {
   list-style: none;
 }
 
+.breadcrumbs-link:not(:last-child) {
+  margin-right: 28px;
+}
 .breadcrumbs-item {
   font-size: 16px;
   line-height: 21px;
@@ -480,6 +484,42 @@ address.contact-address {
   list-style: none;
 }
 
+.top-catalog-section {
+  display: flex;
+  background-color: #ffffff;
+  color: #000000;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.top-catalog-section > h2 {
+  margin-block: 6px;
+  margin-right: 200px;
+}
+
+.top-catalog-section select {
+  width: 292px;
+  background-color: #ffffff;
+  height: 48px;
+  margin-right: 70px;
+}
+
+.top-catalog-section .button {
+  width: 48px;
+  height: 48px;
+  padding: 0;
+}
+
+.top-catalog-section li:not(:last-child) {
+  margin-right: 8px;
+}
+
+.view-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 .catalog-section {
   min-width: 1060px;
   margin: 50px 70px 60px 70px;
