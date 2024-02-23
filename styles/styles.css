@@ -412,14 +412,22 @@ address.contact-address {
   margin-right: auto;
   display: flex;
   flex-wrap: wrap;
+  align-items: baseline;
 }
 
 .breadcrumbs-link {
   list-style-type: none;
+  margin-block: auto;
 }
 
 .breadcrumbs-link:not(:last-child) {
   margin-right: 28px;
+}
+
+.breadcrumbs-link a {
+  display: block;
+  box-sizing: border-box;
+  min-height: 21px;
 }
 
 .breadcrumbs-item {
