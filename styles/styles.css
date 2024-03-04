@@ -622,6 +622,8 @@ address.contact-address {
 .catalog-item h4 {
   margin: 0;
   grid-column: 1 / -1;
+  font-size: 24px;
+    line-height: 28px;
 }
 
 .catalog-item a {
@@ -637,13 +639,15 @@ address.contact-address {
   margin: 0;
 }
 
-.card-paragraph span {
+.card-paragraph {
   font-size: 18px;
   line-height: 21px;
 }
+
 .price {
   text-align: end;
 }
+
 .more-details-button {
   min-width: 140px;
   background-color: rgba(117, 97, 87, 1);
@@ -693,6 +697,7 @@ address.contact-address {
   row-gap: 16px;
   column-gap: 20px;
 }
+
 .pagination-row {
   list-style-type: none;
   font-size: 20px;
