@@ -141,12 +141,12 @@
             <!-- список кнопок вида сортировки -->
             <ul class="view-list">
               <li class="button-item">
-                <button type="button" class="button button-card ">
+                <button type="button" class="button button-card-show ">
                   <span class="visually-hidden">Показать карточки</span>
                 </button>
               </li>
               <li class="button-item">
-                <button type="button" class=" button button-box ">
+                <button type="button" class=" button button-box-show ">
                   <span class="visually-hidden">Показать боксы</span>
                 </button>
               </li>
@@ -162,98 +162,90 @@
             <ul class="catalog-list">
               <!-- первый элемент карточки -->
               <li class="catalog-item">
-                <a href="#" class="catalog-item-link">
-                  <img src="images/hotel-1.jpg" width="300" height="212" alt="Горы и звездное небо"
-                    class="catalog-item-img">
-                  <h4 class="h3-heading">Amara Resort & Spa</h4>
-                </a>
-                <p class="card-paragraph">
-                  <span class="apartment-type">Гостиница</span>
-                  <span class="price">От 4000 ₽</span>
-                </p>
-                <div class="button-list">
-                  <button type="button" class="more-details button">Подробнее</button>
-                  <button type="button" class="favorite button">В избранное</button>
-                </div>
-                <div class="rating-list">
-                  <div class="stars-list">
+                <div class="catalog-item-wrapper">
+                  <a href="#" class="catalog-item-link">
+                    <img src="images/hotel-1.jpg" width="300" height="212" alt="Горы и звездное небо"
+                      class="catalog-item-img">
+                  </a>
+                  <div class="card-content">
+                    <h4 class="h3-heading">Amara Resort & Spa</h4>
+                    <span class="card-paragraph apartment-type">Гостиница</span>
+                    <span class="card-paragraph price">От 4000 ₽</span>
+                    <button class="more-details-button button">Подробнее</button>
+                    <button type="button" class="favorite-button button">В избранное</button>
                     <div class="star-item">
                       <img src="images/stars/4stars.svg" width="140" height="37" alt="Звезды" class="star-img">
                     </div>
+                    <div class="rating-value-div">
+                      <span class="rating-value">Рейтинг: 8.5</span>
+                    </div>
                   </div>
-                  <div class="rating-value-div">Рейтинг: 8.5</div>
                 </div>
               </li>
 
               <li class="catalog-item">
-                <a href="#" class="catalog-item-link">
-                  <img src="images/hotel-2.jpg" width="300" height="212" alt="Горы и звездное небо"
-                    class="catalog-item-img">
-                  <h4 class="h3-heading">Villas at Poco Diablo</h4>
-                </a>
-                <p class="card-paragraph">
-                  <span class="apartment-type">Гостиница</span>
-                  <span class="price">От 5000 ₽</span>
-                </p>
-                <div class="button-list">
-                  <button type="button" class="more-details button">Подробнее</button>
-                  <button type="button" class="favorite button">В избранное</button>
-                </div>
-                <div class="rating-list">
-                  <div class="stars-list">
+                <div class="catalog-item-wrapper">
+                  <a href="#" class="catalog-item-link">
+                    <img src="images/hotel-2.jpg" width="300" height="212" alt="Горы и звездное небо"
+                      class="catalog-item-img">
+                  </a>
+                  <div class="card-content">
+                    <h4 class="h3-heading">Villas at Poco Diablo</h4>
+                    <span class="card-paragraph apartment-type">Гостиница</span>
+                    <span class="card-paragraph price">От 5000 ₽</span>
+                    <button class="more-details-button button">Подробнее</button>
+                    <button type="button" class="favorite-button active button">В избранном</button>
                     <div class="star-item">
                       <img src="images/stars/4stars.svg" width="140" height="37" alt="Звезды" class="star-img">
                     </div>
+                    <div class="rating-value-div">
+                      <span class="rating-value">Рейтинг: 9.2</span>
+                    </div>
                   </div>
-                  <div class="rating-value-div">Рейтинг: 9.2</div>
                 </div>
               </li>
 
               <li class="catalog-item">
-                <a href="#" class="catalog-item-link">
-                  <img src="images/hotel-3.jpg" width="300" height="212" alt="Горы и звездное небо"
-                    class="catalog-item-img">
-                  <h4 class="h3-heading">Desert Quail Inn</h4>
-                </a>
-                <p class="card-paragraph">
-                  <span class="apartment-type">Гостиница</span>
-                  <span class="price">От 2500 ₽</span>
-                </p>
-                <div class="button-list">
-                  <button type="button" class="more-details button">Подробнее</button>
-                  <button type="button" class="favorite button">В избранное</button>
-                </div>
-                <div class="rating-list">
-                  <div class="stars-list">
+                <div class="catalog-item-wrapper">
+                  <a href="#" class="catalog-item-link">
+                    <img src="images/hotel-3.jpg" width="300" height="212" alt="Горы и звездное небо"
+                      class="catalog-item-img">
+                  </a>
+                  <div class="card-content">
+                    <h4 class="h3-heading">Desert Quail Inn</h4>
+                    <span class="card-paragraph apartment-type">Гостиница</span>
+                    <span class="card-paragraph price">От 2500 ₽</span>
+                    <button class="more-details-button button">Подробнее</button>
+                    <button type="button" class="favorite-button button">В избранное</button>
                     <div class="star-item">
-                      <img src="images/stars/3stars.svg" width="140" height="37" alt="Звезды" class="star-img">
+                      <img src="images/stars/4stars.svg" width="140" height="37" alt="Звезды" class="star-img">
+                    </div>
+                    <div class="rating-value-div">
+                      <span class="rating-value">Рейтинг: 6.9</span>
                     </div>
                   </div>
-                  <div class="rating-value-div">Рейтинг: 6.9</div>
                 </div>
               </li>
 
               <li class="catalog-item">
-                <a href="#" class="catalog-item-link">
-                  <img src="images/hotel-4.jpg" width="300" height="212" alt="Горы и звездное небо"
-                    class="catalog-item-img">
-                  <h4 class="h3-heading">GreenTree Inn</h4>
-                </a>
-                <p class="card-paragraph">
-                  <span class="apartment-type">Гостиница</span>
-                  <span class="price">От 1500 ₽</span>
-                </p>
-                <div class="button-list">
-                  <button type="button" class="more-details button">Подробнее</button>
-                  <button type="button" class="favorite button">В избранное</button>
-                </div>
-                <div class="rating-list">
-                  <div class="stars-list">
+                <div class="catalog-item-wrapper">
+                  <a href="#" class="catalog-item-link">
+                    <img src="images/hotel-4.jpg" width="300" height="212" alt="Горы и звездное небо"
+                      class="catalog-item-img">
+                  </a>
+                  <div class="card-content">
+                    <h4 class="h3-heading">GreenTree Inn</h4>
+                    <span class="card-paragraph apartment-type">Гостиница</span>
+                    <span class="card-paragraph price">От 1500 ₽</span>
+                    <button class="more-details-button button">Подробнее</button>
+                    <button type="button" class="favorite-button button">В избранное</button>
                     <div class="star-item">
-                      <img src="images/stars/2stars.svg" width="140" height="37" alt="Звезды" class="star-img">
+                      <img src="images/stars/4stars.svg" width="140" height="37" alt="Звезды" class="star-img">
+                    </div>
+                    <div class="rating-value-div">
+                      <span class="rating-value">Рейтинг: 5.0</span>
                     </div>
                   </div>
-                  <div class="rating-value-div">Рейтинг: 5,0</div>
                 </div>
               </li>
             </ul>
