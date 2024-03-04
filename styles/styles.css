@@ -621,7 +621,7 @@ address.contact-address {
 
 .catalog-item h4 {
   margin: 0;
-  margin-bottom: 16px;
+  grid-column: 1 / -1;
 }
 
 .catalog-item a {
@@ -634,29 +634,23 @@ address.contact-address {
 }
 
 .catalog-item p {
-  display: flex;
   margin: 0;
-  margin-bottom: 16px;
 }
 
 .card-paragraph span {
   font-size: 18px;
   line-height: 21px;
 }
-
+.price {
+  text-align: end;
+}
 .more-details-button {
   min-width: 140px;
   background-color: rgba(117, 97, 87, 1);
   font-size: 16px;
   line-height: 20px;
   padding: 8px 26px;
-  align-self: flex-start;
   margin: 0;
-  margin-right: 14px;
-}
-
-.price {
-  margin-left: auto;
 }
 
 .favorite-button {
@@ -665,17 +659,11 @@ address.contact-address {
   font-size: 16px;
   line-height: 20px;
   padding: 8px 18px;
-  align-self: flex-end;
   margin: 0;
 }
 
 .favorite-button.active {
   background: rgba(125, 181, 79, 1);
-}
-
-.stars-list {
-  display: flex;
-  margin-top: 16px;
 }
 
 .star-item {
@@ -692,12 +680,19 @@ address.contact-address {
 }
 
 .rating-value-div {
+  height: 37px;
   border-radius: 4px;
   display: flex;
   background-color: rgba(242, 242, 242, 1);
   min-width: 140px;
 }
 
+.card-content {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  row-gap: 16px;
+  column-gap: 20px;
+}
 .pagination-row {
   list-style-type: none;
   font-size: 20px;
