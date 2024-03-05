@@ -555,7 +555,7 @@ address.contact-address {
 .button-card-show {
   background-color: #ffffff;
   border: 2px solid rgba(0, 0, 0, 1);
-  background-image: url(/images/icons/View-icon.svg);
+  background-image: url("/images/icons/view-icon.svg");
   background-repeat: no-repeat;
   background-size: auto auto;
   background-position: center, center;
@@ -564,7 +564,7 @@ address.contact-address {
 .button-box-show {
   background-color: #ffffff;
   border: 2px solid rgba(229, 229, 229, 1);
-  background-image: url(/images/icons/View-icon-1.svg);
+  background-image: url("/images/icons/view-icon-1.svg");
   background-repeat: no-repeat;
   background-size: auto auto;
   background-position: center, center;
@@ -573,7 +573,7 @@ address.contact-address {
 .button-list-show {
   background-color: #ffffff;
   border: 2px solid rgba(229, 229, 229, 1);
-  background-image: url(/images/icons/View-icon-2.svg);
+  background-image: url("/images/icons/view-icon-2.svg");
   background-repeat: no-repeat;
   background-size: auto auto;
   background-position: center, center;
@@ -623,7 +623,7 @@ address.contact-address {
   margin: 0;
   grid-column: 1 / -1;
   font-size: 24px;
-    line-height: 28px;
+  line-height: 28px;
 }
 
 .catalog-item a {
