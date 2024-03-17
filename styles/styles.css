@@ -29,6 +29,7 @@ body {
   line-height: 26px;
   color: #000000;
   background-color: rgba(242, 242, 242, 1);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
 }
 
 .wrapper {
@@ -38,6 +39,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
 }
 
 .main-container {
@@ -81,6 +83,7 @@ body {
   margin-right: 20px;
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 .navigation-list:not(:last-child) {
@@ -102,13 +105,37 @@ body {
   margin-left: auto;
 }
 
-.navigation-user .navigation-link a {
-  min-width: 20px;
-  min-height: 20px;
-  display: block;
-  padding-inline: 12px;
-  padding-block: 22px;
-  box-sizing: border-box;
+.navigation-search-item {
+  background-image: url("/images/icons/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.navigation-favorite-item {
+  background-image: url("/images/icons/icon-favorite.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.navigation-favorite-item::before {
+  content: "12";
+  background-color: rgba(125, 181, 79, 1);
+  color: #ffffff;
+  font-size: 10px;
+  line-height: 10px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -11px;
+  left: 8px;
+  width: 20px;
+  height: 20px;
+  font-family: PT Sans;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: center;
 }
 
 .navigation-item a {
@@ -124,6 +151,15 @@ body {
   background-color: #ffffff;
   text-decoration: none;
   text-align: center;
+  min-width: 44px;
+}
+
+.navigation-item-active {
+  text-decoration: underline;
+  text-decoration-color: rgba(117, 98, 87, 1);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 18px;
+  text-underline-position: under;
 }
 
 .button {
@@ -136,9 +172,11 @@ body {
   border: 0;
   padding: 8px 50px;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .header-button {
+  font-family:  "PT Sans", sans-serif;;
   padding: 8px 34px;
   margin: auto 0;
   background-color: #756157;
@@ -146,6 +184,7 @@ body {
   min-width: 160px;
   font-size: 16px;
   line-height: 20px;
+  cursor: pointer;
 }
 
 .main-hero {
@@ -164,7 +203,16 @@ body {
 }
 
 .middle-section {
-  margin-block: 66px;
+  margin-top: 69px;
+  margin-bottom: 90px;
+}
+
+section:nth-of-type(4)  {
+  margin-block: 64px;
+}
+
+section:nth-of-type(6)  {
+  margin-block: 96px;
 }
 
 .section-heading {
@@ -213,6 +261,28 @@ body {
   align-self: center;
   margin-top: 0;
   margin-bottom: 62px;
+}
+
+.advantages-item:not(.second-advantages-item) p::before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 60px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+  left: 85px;
+  top: -30px;
+}
+
+.advantages-div > .advantages-item p::before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 60px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+  left: 85px;
+  top: -30px;
 }
 
 .advantages-item p {
@@ -313,12 +383,15 @@ body {
 
 .subscribe-form input {
   width: 432px;
-  padding: 0 0 0 20px;
+  padding-inline: 20px 0;
+  padding-block: 0;
   background-color: rgba(242, 242, 242, 1);
   border: 0;
+  border-radius: 4px 0 0 4px;
 }
 
 .subscribe-button {
+  border-radius: 0 4px 4px 0;
   background-color: rgba(130, 179, 211, 1);
 }
 
@@ -327,10 +400,11 @@ body {
   margin: 40px 70px 30px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .contacts-footer {
-  min-width: 225px;
+  min-width: 183px;
 }
 
 .footer-social-list {
@@ -346,24 +420,6 @@ body {
   min-height: 40px;
   display: block;
   box-sizing: border-box;
-}
-
-.footer-social-list li:first-child {
-  background-image: url("/images/icons/icon-vk.svg");
-  background-repeat: no-repeat;
-  background-size: auto auto;
-}
-
-.footer-social-list li:nth-child(2) {
-  background-image: url("/images/icons/icon-telegram.svg");
-  background-repeat: no-repeat;
-  background-size: auto auto;
-}
-
-.footer-social-list li:nth-child(3) {
-  background-image: url("/images/icons/icon-youtube.svg");
-  background-repeat: no-repeat;
-  background-size: auto auto;
 }
 
 .phone-footer {
@@ -393,7 +449,7 @@ address.contact-address {
   margin-block: auto;
 }
 
-.logo-footer img {
+.logo-footer svg {
   display: block;
   box-sizing: content-box;
   padding-block: 9px;
@@ -531,6 +587,11 @@ address.contact-address {
 }
 
 .top-catalog-section select {
+  appearance: none;
+  background-image: url("/images/icons/select-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 260px center;
+  display: block;
   width: 292px;
   background-color: #ffffff;
   height: 48px;
