@@ -176,7 +176,8 @@ body {
 }
 
 .header-button {
-  font-family:  "PT Sans", sans-serif;;
+  font-family: "PT Sans", sans-serif;
+  ;
   padding: 8px 34px;
   margin: auto 0;
   background-color: #756157;
@@ -207,11 +208,11 @@ body {
   margin-bottom: 90px;
 }
 
-section:nth-of-type(4)  {
+section:nth-of-type(4) {
   margin-block: 64px;
 }
 
-section:nth-of-type(6)  {
+section:nth-of-type(6) {
   margin-block: 96px;
 }
 
@@ -422,6 +423,25 @@ section:nth-of-type(6)  {
   box-sizing: border-box;
 }
 
+.social-icon {
+  display: block;
+  margin: 0;
+  color: #82B3D3;
+}
+
+.social-icon:hover {
+  fill: #68A2CA;
+}
+
+.social-link:focus .social-icon {
+  fill: #68A2CA;
+}
+
+.social-icon:active {
+  fill: #68A2CA;
+  opacity: 30%;
+}
+
 .phone-footer {
   min-width: 720px;
   text-align: center;
@@ -440,6 +460,18 @@ address.contact-address {
   color: inherit;
 }
 
+.contact-address a:hover {
+  color: #756157;
+}
+
+.contact-address a:focus {
+  color: #756157;
+}
+
+.contact-address a:active {
+  opacity: 0.3;
+}
+
 .logo-footer a {
   display: block;
   box-sizing: border-box;
@@ -450,10 +482,23 @@ address.contact-address {
 }
 
 .logo-footer svg {
+  fill: black;
   display: block;
   box-sizing: content-box;
   padding-block: 9px;
   padding-left: 42px;
+}
+
+.footer-logo:hover .academy-logo {
+  fill: #756157;
+}
+
+.footer-logo:focus .academy-logo {
+  fill: #756157;
+}
+
+.footer-logo:active .academy-logo {
+  opacity: 0.3;
 }
 
 .filter-section {
@@ -587,12 +632,14 @@ address.contact-address {
 }
 
 .top-catalog-section select {
+  box-sizing: border-box;
   appearance: none;
   background-image: url("/images/icons/select-icon.svg");
   background-repeat: no-repeat;
-  background-position: 260px center;
+  background-size: 12px 7px;
+  background-position: 256px center;
   display: block;
-  width: 292px;
+  width: 290px;
   background-color: #ffffff;
   height: 48px;
   margin-right: 70px;
