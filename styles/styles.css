@@ -428,7 +428,6 @@ section:nth-of-type(4) {
   background-color: rgba(104, 162, 202, 1);
 }
 
-
 .footer-container {
   min-width: 1060px;
   margin: 40px 70px 30px;
@@ -580,13 +579,12 @@ address.contact-address {
   content: "";
   display: block;
   position: absolute;
-  width: 8px;
+  width: 7px;
   height: 2px;
-  border-radius: 1px 0 0 1px;
+  border-radius: 2px 0 0 2px;
   bottom: 8px;
-  right: -20px;
+  right: -18px;
   background-color: #ffffff;
-  content: "";
   transform: rotate(-45deg);
 }
 
@@ -594,13 +592,12 @@ address.contact-address {
   content: "";
   display: block;
   position: absolute;
-  width: 8px;
-  border-radius: 1px 0 0 1px;
+  width: 7px;
+  border-radius: 2px 0 0 2px;
   height: 2px;
-  bottom: 12.5px;
-  right: -20px;
+  bottom: 12px;
+  right: -18px;
   background-color: #ffffff;
-  content: "";
   transform: rotate(45deg);
 }
 
@@ -692,14 +689,35 @@ address.contact-address {
   margin-top: 56px;
 }
 
+.apply-button:hover {
+  background-color: rgba(104, 162, 202, 1);
+}
+
 .reset-button {
   background-color: rgba(255, 255, 255, 0);
   font-size: 16px;
   line-height: 20px;
 }
 
+.reset-button:hover {
+  opacity: 0.5;
+}
+
 .button-item {
   list-style-type: none;
+}
+
+.button-item .button:hover {
+  border: 2px solid rgba(0, 0, 0, 1);
+}
+
+.button-item .button:focus-visible {
+  border: 2px solid rgba(104, 162, 202, 1);
+  outline: 0;
+}
+
+.button-item .button:active {
+  border: 2px solid rgba(0, 0, 0, 1);
 }
 
 .top-catalog-section {
@@ -734,6 +752,15 @@ address.contact-address {
   padding-inline: 20px;
 }
 
+.top-catalog-section select:hover {
+  border: 2px solid rgba(104, 162, 202, 1)
+}
+
+.top-catalog-section select:focus-visible {
+  border: 2px solid rgba(104, 162, 202, 1);
+  outline: 0;
+}
+
 .top-catalog-section .button {
   width: 48px;
   height: 48px;
@@ -746,7 +773,7 @@ address.contact-address {
 
 .button-card-show {
   background-color: #ffffff;
-  border: 2px solid rgba(0, 0, 0, 1);
+  border: 2px solid rgba(229, 229, 229, 1);
   background-image: url("/images/icons/view-icon.svg");
   background-repeat: no-repeat;
   background-size: auto auto;
@@ -936,7 +963,7 @@ address.contact-address {
   margin-right: 8px;
 }
 
-.pagination-item a {
+.pagination-link {
   color: inherit;
   display: block;
   box-sizing: border-box;
@@ -952,17 +979,48 @@ address.contact-address {
 .pagination-row li {
   color: #ffffff;
   background-color: rgba(130, 179, 211, 1);
+  border-radius: 4px;
 }
 
-.pagination-row li:first-child {
-  color: inherit;
+.pagination-row li:hover {
+  background: rgba(104, 162, 202, 1);
+}
+
+.pagination-item a:focus-visible {
+  background: rgba(104, 162, 202, 1);
+  outline: 0;
+}
+
+.pagination-item a:active {
+  background: rgba(104, 162, 202, 1);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.pagination-row li.active {
+  color: #000000;
   background-color: rgba(242, 242, 242, 1);
 }
 
-.pagination-row li:nth-child(5) {
-  color: inherit;
+.pagination-item.active a:focus-visible {
+  background-color: rgba(242, 242, 242, 1);
+}
+
+.pagination-item.active a:active {
+  color: #000000;
+}
+
+.pagination-row .pagination-next-list {
+  color: #000000;
   background-color: rgba(242, 242, 242, 1);
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
+}
+
+.pagination-row .pagination-next-list:focus-visible {
+  outline: 0;
+  background-color: rgba(242, 242, 242, 1);
+}
+.pagination-row .pagination-next-list:active {
+  color: #000000;
 }
