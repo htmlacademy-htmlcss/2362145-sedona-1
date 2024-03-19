@@ -175,9 +175,12 @@ body {
   cursor: pointer;
 }
 
+.button:focus-visible {
+  outline: 3px solid rgba(131, 179, 211, 1);
+}
+
 .header-button {
   font-family: "PT Sans", sans-serif;
-  ;
   padding: 8px 34px;
   margin: auto 0;
   background-color: #756157;
@@ -186,6 +189,18 @@ body {
   font-size: 16px;
   line-height: 20px;
   cursor: pointer;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.header-button:hover {
+  background-color: rgba(97, 80, 72, 1);
+}
+
+.header-button:focus-visible {
+  background-color: rgba(97, 80, 72, 1);
 }
 
 .main-hero {
@@ -212,7 +227,7 @@ section:nth-of-type(4) {
   margin-block: 64px;
 }
 
-section:nth-of-type(6) {
+.hotel-search-section {
   margin-block: 96px;
 }
 
@@ -244,6 +259,7 @@ section:nth-of-type(6) {
 }
 
 .advantages-item {
+  position: relative;
   display: flex;
   flex-direction: column;
   min-width: 400px;
@@ -357,6 +373,14 @@ section:nth-of-type(6) {
   background-color: #756157;
 }
 
+.section-button:hover {
+  background-color: rgba(97, 80, 72, 1);
+}
+
+.section-button:focus-visible {
+  background-color: rgba(97, 80, 72, 1);
+}
+
 .subscribe-section {
   display: flex;
   flex-direction: column;
@@ -395,6 +419,15 @@ section:nth-of-type(6) {
   border-radius: 0 4px 4px 0;
   background-color: rgba(130, 179, 211, 1);
 }
+
+.subscribe-button:hover {
+  background-color: rgba(104, 162, 202, 1);
+}
+
+.subscribe-button:focus-visible {
+  background-color: rgba(104, 162, 202, 1);
+}
+
 
 .footer-container {
   min-width: 1060px;
@@ -437,6 +470,10 @@ section:nth-of-type(6) {
   fill: #68A2CA;
 }
 
+.social-link:focus-visible {
+  color: #68A2CA;
+}
+
 .social-icon:active {
   fill: #68A2CA;
   opacity: 30%;
@@ -464,7 +501,7 @@ address.contact-address {
   color: #756157;
 }
 
-.contact-address a:focus {
+.contact-address a:focus-visible {
   color: #756157;
 }
 
@@ -485,7 +522,7 @@ address.contact-address {
   fill: black;
   display: block;
   box-sizing: content-box;
-  padding-block: 9px;
+  padding-block: 8px;
   padding-left: 42px;
 }
 
@@ -493,7 +530,7 @@ address.contact-address {
   fill: #756157;
 }
 
-.footer-logo:focus .academy-logo {
+.footer-logo:focus-visible .academy-logo {
   fill: #756157;
 }
 
@@ -530,6 +567,7 @@ address.contact-address {
 }
 
 .breadcrumbs-link {
+  position: relative;
   list-style-type: none;
   margin-block: auto;
 }
@@ -538,10 +576,56 @@ address.contact-address {
   margin-right: 28px;
 }
 
+.breadcrumbs-link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8px;
+  height: 2px;
+  border-radius: 1px 0 0 1px;
+  bottom: 8px;
+  right: -20px;
+  background-color: #ffffff;
+  content: "";
+  transform: rotate(-45deg);
+}
+
+.breadcrumbs-link::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8px;
+  border-radius: 1px 0 0 1px;
+  height: 2px;
+  bottom: 12.5px;
+  right: -20px;
+  background-color: #ffffff;
+  content: "";
+  transform: rotate(45deg);
+}
+
+.breadcrumbs-link:last-child::after {
+  content: none;
+}
+
+.breadcrumbs-link:last-child::before {
+  content: none;
+}
+
+.breadcrumbs-item:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-item:active {
+  opacity: 0.3;
+}
+
 .breadcrumbs-link a {
   display: block;
   box-sizing: border-box;
   min-height: 21px;
+  color: inherit;
+  text-decoration: none;
 }
 
 .breadcrumbs-item {
@@ -724,11 +808,11 @@ address.contact-address {
 .catalog-item-img {
   display: block;
   object-fit: contain;
-  margin-bottom: 16px;
 }
 
 .catalog-item h4 {
   margin: 0;
+  margin-top: 16px;
   grid-column: 1 / -1;
   font-size: 24px;
   line-height: 28px;
@@ -758,11 +842,19 @@ address.contact-address {
 
 .more-details-button {
   min-width: 140px;
-  background-color: rgba(117, 97, 87, 1);
+  background-color: #756157;
   font-size: 16px;
   line-height: 20px;
   padding: 8px 26px;
   margin: 0;
+}
+
+.more-details-button:hover {
+  background-color: rgba(97, 80, 72, 1);
+}
+
+.more-details-button:focus-visible {
+  background-color: rgba(97, 80, 72, 1);
 }
 
 .favorite-button {
@@ -774,13 +866,35 @@ address.contact-address {
   margin: 0;
 }
 
+.favorite-button:hover {
+  background-color: rgba(104, 162, 202, 1);
+}
+
+.favorite-button:focus-visible {
+  background-color: rgba(104, 162, 202, 1);
+}
+
 .favorite-button.active {
   background: rgba(125, 181, 79, 1);
 }
 
+.favorite-button.active:hover {
+  background-color: rgba(108, 158, 66, 1);
+}
+
+.favorite-button.active:focus-visible {
+  background-color: rgba(108, 158, 66, 1);
+}
+
+
 .star-item {
   margin-right: 20px;
   min-width: 140px;
+}
+
+.star-item img {
+  display: block;
+  margin: 0;
 }
 
 .rating-value {
