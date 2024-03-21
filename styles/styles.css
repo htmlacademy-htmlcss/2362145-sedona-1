@@ -176,7 +176,7 @@ body {
 }
 
 .button:focus-visible {
-  outline: 3px solid rgba(131, 179, 211, 1);
+  outline: none;
 }
 
 .header-button {
@@ -190,6 +190,7 @@ body {
   line-height: 20px;
   cursor: pointer;
 }
+
 
 .button:active {
   color: rgba(255, 255, 255, 0.3);
@@ -727,7 +728,7 @@ input:checked + .radiobox::before {
   opacity: 0.3;
 }
 
-input:focus-visible + .custom-checkbox{
+input:focus-visible + .custom-checkbox {
   outline: 3px solid #83B3D3;
 }
 
@@ -762,6 +763,10 @@ input:focus-visible + .custom-checkbox{
 
 .reset-button:hover {
   opacity: 0.5;
+}
+
+.reset-button:focus-visible {
+  outline: 3px solid rgba(131, 179, 211, 1);
 }
 
 .button-item {
