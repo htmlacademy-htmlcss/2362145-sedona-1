@@ -727,7 +727,7 @@ input:checked + .radiobox::before {
   opacity: 0.3;
 }
 
-.custom-checkbox:focus-visible {
+input:focus-visible + .custom-checkbox{
   outline: 3px solid #83B3D3;
 }
 
