@@ -670,6 +670,67 @@ address.contact-address {
   margin-bottom: 16px;
 }
 
+.catalog-filter-item label {
+  margin-left: 36px;
+  position: relative;
+}
+
+.custom-checkbox {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  left: -36px;
+  top: 1.5px;
+  background-color: #ffffff;
+}
+
+.custom-checkbox::before {
+  content: "";
+  position: absolute;
+  margin: 0;
+  width: 13px;
+  height: 11px;
+  left: 4px;
+  top: 5px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/images/icons/input-cheked.svg");
+  transform: scale(0);
+}
+
+input:checked + .custom-checkbox::before {
+  transform: scale(1);
+  transition: 0.2s ease-in;
+}
+
+.radiobox {
+  border-radius: 50%;
+}
+
+input:checked + .radiobox::before {
+  height: 10px;
+  width: 10px;
+  background-color: #3F5E72;
+  border-radius: 50%;
+  left: 5px;
+  top: 5px;
+  background-image: none;
+}
+
+.catalog-filter-item label:hover {
+  opacity: 0.6;
+}
+
+.catalog-filter-item label:active {
+  opacity: 0.3;
+}
+
+.custom-checkbox:focus-visible {
+  outline: 3px solid #83B3D3;
+}
+
 .catalog-filter-group {
   margin: 0;
   padding: 0;
@@ -708,12 +769,13 @@ address.contact-address {
 }
 
 .button-item .button:hover {
+  background-color: ;
   border: 2px solid rgba(0, 0, 0, 1);
 }
 
 .button-item .button:focus-visible {
   border: 2px solid rgba(104, 162, 202, 1);
-  outline: 0;
+  outline: none;
 }
 
 .button-item .button:active {
@@ -758,7 +820,11 @@ address.contact-address {
 
 .top-catalog-section select:focus-visible {
   border: 2px solid rgba(104, 162, 202, 1);
-  outline: 0;
+  outline: none;
+}
+
+.top-catalog-section select[disabled] {
+  opacity: 0.3;
 }
 
 .top-catalog-section .button {
@@ -988,7 +1054,7 @@ address.contact-address {
 
 .pagination-item a:focus-visible {
   background: rgba(104, 162, 202, 1);
-  outline: 0;
+  outline: none;
 }
 
 .pagination-item a:active {
@@ -1018,9 +1084,27 @@ address.contact-address {
 }
 
 .pagination-row .pagination-next-list:focus-visible {
-  outline: 0;
+  outline: none;
   background-color: rgba(242, 242, 242, 1);
 }
+
 .pagination-row .pagination-next-list:active {
   color: #000000;
+}
+
+.button[disabled] {
+  background-color: #E5E5E5;
+}
+
+.button:hover[disabled] {
+  background-color: #E5E5E5;
+}
+
+.button:active[disabled] {
+  background-color: #E5E5E5;
+}
+
+.reset-button[disabled] {
+  background-color: rgba(255, 255, 255, 0);
+  color: rgba(255, 255, 255, 0.1);
 }
