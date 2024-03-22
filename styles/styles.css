@@ -206,7 +206,7 @@ body {
 
 .main-hero {
   background-color: darkgrey;
-  background-image: url("/images/index-background.jpg");
+  background-image: url("../images/index-background.jpg");
   background-repeat: no-repeat;
   background-size: auto auto;
   background-position: center, center;
@@ -336,7 +336,7 @@ section:nth-of-type(4) {
 }
 
 .second-advantages-list li:first-child {
-  background-image: url("/images/icons/house.svg");
+  background-image: url("../images/icons/house.svg");
   background-repeat: no-repeat;
   background-size: auto auto;
   background-position: top;
@@ -344,7 +344,7 @@ section:nth-of-type(4) {
 }
 
 .second-advantages-list li:nth-child(2) {
-  background-image: url("/images/icons/food.svg");
+  background-image: url("../images/icons/food.svg");
   background-repeat: no-repeat;
   background-size: auto auto;
   background-position: top;
@@ -352,7 +352,7 @@ section:nth-of-type(4) {
 }
 
 .second-advantages-list li:nth-child(3) {
-  background-image: url("/images/icons/present.svg");
+  background-image: url("../images/icons/present.svg");
   background-repeat: no-repeat;
   background-size: auto auto;
   background-position: top;
@@ -397,7 +397,7 @@ section:nth-of-type(4) {
 .subscribe-section.on-index {
   color: #ffffff;
   background-color: darkgrey;
-  background-image: url("/images/subscribe.jpg");
+  background-image: url("../images/subscribe.jpg");
   background-repeat: no-repeat;
   background-size: auto;
 }
@@ -414,6 +414,11 @@ section:nth-of-type(4) {
   background-color: rgba(242, 242, 242, 1);
   border: 0;
   border-radius: 4px 0 0 4px;
+}
+
+.subscribe-form input:placeholder-shown {
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .subscribe-button {
@@ -541,7 +546,7 @@ address.contact-address {
 .filter-section {
   color: #ffffff;
   background-color: darkgrey;
-  background-image: url("/images/filter.jpg");
+  background-image: url("../images/filter.jpg");
   background-repeat: no-repeat;
   background-size: auto auto;
   padding: 35px 70px 70px;
@@ -578,28 +583,12 @@ address.contact-address {
 
 .breadcrumbs-link::after {
   content: "";
-  display: block;
   position: absolute;
-  width: 7px;
-  height: 2px;
-  border-radius: 2px 0 0 2px;
-  bottom: 8px;
+  width: 8px;
+  height: 21px;
   right: -18px;
-  background-color: #ffffff;
-  transform: rotate(-45deg);
-}
-
-.breadcrumbs-link::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 7px;
-  border-radius: 2px 0 0 2px;
-  height: 2px;
-  bottom: 12px;
-  right: -18px;
-  background-color: #ffffff;
-  transform: rotate(45deg);
+  top: 0;
+  background-image: url(../images/icons/breadcrumbs.svg);
 }
 
 .breadcrumbs-link:last-child::after {
@@ -697,7 +686,7 @@ address.contact-address {
   top: 5px;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/images/icons/input-cheked.svg");
+  background-image: url("../images/icons/input-cheked.svg");
   transform: scale(0);
 }
 
@@ -803,7 +792,7 @@ input:focus-visible + .custom-checkbox {
 .top-catalog-section select {
   box-sizing: border-box;
   appearance: none;
-  background-image: url("/images/icons/select-icon.svg");
+  background-image: url("../images/icons/select-icon.svg");
   background-repeat: no-repeat;
   background-size: 12px 7px;
   background-position: 256px center;
@@ -845,7 +834,7 @@ input:focus-visible + .custom-checkbox {
 .button-card-show {
   background-color: #ffffff;
   border: 2px solid rgba(229, 229, 229, 1);
-  background-image: url("/images/icons/view-icon.svg");
+  background-image: url("../images/icons/view-icon.svg");
   background-repeat: no-repeat;
   background-size: auto auto;
   background-position: center, center;
@@ -854,7 +843,7 @@ input:focus-visible + .custom-checkbox {
 .button-box-show {
   background-color: #ffffff;
   border: 2px solid rgba(229, 229, 229, 1);
-  background-image: url("/images/icons/view-icon-1.svg");
+  background-image: url("../images/icons/view-icon-1.svg");
   background-repeat: no-repeat;
   background-size: auto auto;
   background-position: center, center;
@@ -863,7 +852,7 @@ input:focus-visible + .custom-checkbox {
 .button-list-show {
   background-color: #ffffff;
   border: 2px solid rgba(229, 229, 229, 1);
-  background-image: url("/images/icons/view-icon-2.svg");
+  background-image: url("../images/icons/view-icon-2.svg");
   background-repeat: no-repeat;
   background-size: auto auto;
   background-position: center, center;
