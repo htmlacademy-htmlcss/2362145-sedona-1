@@ -65,7 +65,7 @@
             </ul>
           </header>
           <!-- форма в блоке -->
-          <form action="https://echo.htmlacademy.ru/" class="catalog-filter" method="get">
+          <form action="https://echo.htmlacademy.ru/" class="catalog-filter" method="get" name="form-search">
             <div class="first-filter-container">
               <!-- секция выбора инфраструктуры -->
               <fieldset class="catalog-filter-group button-filter">
@@ -136,8 +136,10 @@
               <!-- секция с кнопками -->
               <section class="catalog-filter-button">
                 <h3 class="visually-hidden">Список товаров с фильтрами</h3>
-                <button name="apply" type="submit" class="button apply-button">Применить</button>
-                <button name="reset" type="reset" class="button reset-button">сбросить</button>
+                <input id="form-search" name="apply" type="submit" class="visually-hidden" placeholder="Применить">
+                <button class="button apply-button" type="submit">Применить</button>
+                </input>
+                <input id="form-search" name="reset" type="reset" class="button reset-button"></input>
               </section>
             </div>
           </form>
@@ -232,7 +234,7 @@
                     <button class="more-details-button button">Подробнее</button>
                     <button type="button" class="favorite-button button">В избранное</button>
                     <div class="star-item">
-                      <img src="images/stars/4stars.svg" width="140" height="37" alt="Звезды" class="star-img">
+                      <img src="images/stars/3stars.svg" width="140" height="37" alt="Звезды" class="star-img">
                     </div>
                     <div class="rating-value-div">
                       <span class="rating-value">Рейтинг: 6.9</span>
@@ -254,7 +256,7 @@
                     <button class="more-details-button button">Подробнее</button>
                     <button type="button" class="favorite-button button">В избранное</button>
                     <div class="star-item">
-                      <img src="images/stars/4stars.svg" width="140" height="37" alt="Звезды" class="star-img">
+                      <img src="images/stars/2stars.svg" width="140" height="37" alt="Звезды" class="star-img">
                     </div>
                     <div class="rating-value-div">
                       <span class="rating-value">Рейтинг: 5.0</span>
