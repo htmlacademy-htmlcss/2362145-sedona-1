@@ -103,7 +103,7 @@
                   <li class="catalog-filter-item">
                     <label class="infrastructure">
                       <input type="radio" name="apartment-type" class="infrastructure-input  visually-hidden"
-                        value="hotel">
+                        value="hotel" required>
                       <span class="custom-checkbox radiobox"></span>
                       Гостиница
                     </label>
@@ -112,7 +112,7 @@
                   <li class="catalog-filter-item">
                     <label class="infrastructure">
                       <input type="radio" name="apartment-type" class="infrastructure-input visually-hidden"
-                        value="motel">
+                        value="motel" required>
                       <span class="custom-checkbox radiobox"></span>
                       Мотель
                     </label>
@@ -120,7 +120,7 @@
                   <li class="catalog-filter-item">
                     <label class="infrastructure">
                       <input type="radio" name="apartment-type" class="infrastructure-input visually-hidden"
-                        value="apartments">
+                        value="apartments" required>
                       <span class="custom-checkbox radiobox"></span>
                       Апартаменты
                     </label>
@@ -130,8 +130,30 @@
             </div>
             <div class="second-filter-container">
               <!-- болванка для сортировки стоимости -->
-              <fieldset class="catalog-filter-group visually-hidden">
+              <fieldset class="catalog-filter-group price-filter-section">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+                <div class="price-wrapper">
+                  <div class="price-input">
+
+                    <div class="input-wrapper first-input-wrapper">
+                      <label for="min-price">от</label>
+                      <input class="price-filter-input" name="min-price" id="min-price" placeholder="0" type="number"
+                        required>
+                    </div>
+                    <div class="input-wrapper second-input-wrapper">
+                      <label for="max-price">до</label>
+                      <input class="price-filter-input" name="max-price" id="max-price" placeholder="9000" type="number"
+                        required>
+                    </div>
+
+                  </div>
+                  <div class="price-scale">
+                    <div class="price-bar" style="left:0; width: 226px;">
+                      <button type="button" class="price-toggler price-min"></button>
+                      <button type="button" class="price-toggler price-max"></button>
+                    </div>
+                  </div>
+                </div>
               </fieldset>
               <!-- секция с кнопками -->
               <section class="catalog-filter-button">

@@ -387,6 +387,7 @@ section:nth-of-type(4) {
 
 .section-button {
   background-color: #756157;
+  text-decoration: none;
 }
 
 .section-button:hover {
@@ -486,7 +487,7 @@ section:nth-of-type(4) {
   fill: #68A2CA;
 }
 
-.social-link:focus .social-icon {
+.social-link:focus-visible .social-icon {
   fill: #68A2CA;
 }
 
@@ -638,6 +639,7 @@ address.contact-address {
 .catalog-filter {
   display: flex;
   min-width: 1060px;
+  justify-content: space-between;
 }
 
 .first-filter-container {
@@ -649,6 +651,7 @@ address.contact-address {
 .second-filter-container {
   min-width: 550px;
   display: flex;
+  justify-content: space-between;
 }
 
 .button-filter {
@@ -724,16 +727,25 @@ input:checked + .radiobox::before {
   background-image: none;
 }
 
-.catalog-filter-item label:hover {
+.catalog-filter-item label:hover .custom-checkbox {
   opacity: 0.6;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
-.catalog-filter-item label:active {
+.catalog-filter-item label:active .custom-checkbox {
   opacity: 0.3;
+  box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.25);
 }
 
-input:focus-visible + .custom-checkbox {
+
+input:focus + .custom-checkbox {
   outline: 3px solid #83B3D3;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.price-filter-section {
+  margin-right: 70px;
+  font: inherit;
 }
 
 .catalog-filter-group {
@@ -778,7 +790,7 @@ input:focus-visible + .custom-checkbox {
 }
 
 .button-item .button:hover {
-  background-color: ;
+  background-color: rgb(255, 255, 255, 0.6);
   border: 2px solid rgba(0, 0, 0, 1);
 }
 
@@ -791,6 +803,138 @@ input:focus-visible + .custom-checkbox {
   border: 2px solid rgba(0, 0, 0, 1);
 }
 
+.price-scale {
+  position: relative;
+  height: 4px;
+  margin-top: 48px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.price-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.price-input {
+  margin-top: 32px;
+  display: flex;
+}
+
+.price-toggler {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.price-toggler:hover {
+  background-color: #E5E5E5;
+}
+
+.price-toggler:active,
+.price-toggler:focus-visible {
+  outline: 2px solid #82B3D3;
+}
+
+.price-min {
+  top: -8px;
+}
+
+.price-max {
+  top: -8px;
+  right: 0;
+}
+
+.price-filter-input::-webkit-outer-spin-button,
+.price-filter-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.price-wrapper {
+  min-width: 288px;
+  display: block;
+}
+
+.input-wrapper {
+  box-sizing: border-box;
+  position: relative;
+  background-color: #ffffff;
+}
+
+
+.first-input-wrapper {
+  border-radius: 4px 0 0 4px;
+  margin-right: 2px;
+}
+
+.second-input-wrapper {
+  border-radius: 0 4px 4px 0;
+}
+
+.input-wrapper label {
+  position: absolute;
+  color: #000000;
+  font: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  right: 12px;
+  bottom: 12px;
+  opacity: 0.3;
+}
+
+
+.price-filter-input {
+  display: block;
+  width: 80px;
+  border: 0;
+  font: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+  padding-block: 10px;
+  padding-inline: 20px 39px;
+  background-color: #f2f2f2;
+  border-radius: 4px 0 0 4px;
+  background-clip: padding-box;
+  border: 2px solid #f2f2f2;
+}
+
+.price-filter-input::placeholder {
+  font: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+}
+
+.second-input-wrapper > .price-filter-input {
+  border-radius: 0 4px 4px 0;
+}
+
+.price-filter-input:hover {
+  background-color: #e6e6e6;
+  border-color: #e6e6e6;
+}
+
+.price-filter-input:focus-visible:placeholder-shown {
+  background-color: #e6e6e6;
+  outline: 3px solid #83B3D3;
+  border-color: #e6e6e6;
+}
+
+.price-filter-input:focus-visible:not(placeholder-shown) {
+  background-color: #f2f2f2;
+  outline: 0;
+  border-color: #000000;
+}
+
 .top-catalog-section {
   display: flex;
   background-color: #ffffff;
@@ -799,10 +943,12 @@ input:focus-visible + .custom-checkbox {
   align-items: center;
 }
 
+
 .top-catalog-section > h2 {
   margin-block: 6px;
   margin-right: 200px;
 }
+
 
 .top-catalog-section select {
   box-sizing: border-box;
