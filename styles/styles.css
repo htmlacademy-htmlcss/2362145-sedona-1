@@ -116,7 +116,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  top: -11px;
+  bottom: 9px;
   left: 8px;
   width: 20px;
   height: 20px;
@@ -662,6 +662,7 @@ address.contact-address {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+  padding: 0;
 }
 
 .catalog-filter-list {
@@ -750,6 +751,7 @@ input:focus + .custom-checkbox {
 
 .catalog-filter-group {
   margin: 0;
+  margin-bottom: 3px;
   padding: 0;
   border: 0;
 }
@@ -806,7 +808,7 @@ input:focus + .custom-checkbox {
 .price-scale {
   position: relative;
   height: 4px;
-  margin-top: 48px;
+  margin-top: 44px;
   background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -883,7 +885,7 @@ input:focus + .custom-checkbox {
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
-  right: 12px;
+  right: 20px;
   bottom: 12px;
   opacity: 0.3;
 }
