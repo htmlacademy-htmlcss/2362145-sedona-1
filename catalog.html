@@ -137,13 +137,11 @@
 
                     <div class="input-wrapper first-input-wrapper">
                       <label for="min-price">от</label>
-                      <input class="price-filter-input" name="min-price" id="min-price" placeholder="0" type="number"
-                        required>
+                      <input class="price-filter-input" name="min-price" id="min-price" value="0" type="number">
                     </div>
                     <div class="input-wrapper second-input-wrapper">
                       <label for="max-price">до</label>
-                      <input class="price-filter-input" name="max-price" id="max-price" placeholder="9000" type="number"
-                        required>
+                      <input class="price-filter-input" name="max-price" id="max-price" value="9000" type="number">
                     </div>
 
                   </div>
@@ -179,7 +177,7 @@
             <!-- список кнопок вида сортировки -->
             <ul class="view-list">
               <li class="button-item">
-                <button type="button" class="button button-card-show ">
+                <button type="button" class="button button-card-show active">
                   <span class="visually-hidden">Показать карточки</span>
                 </button>
               </li>
@@ -215,7 +213,7 @@
                       <img src="images/stars/4stars.svg" width="140" height="37" alt="Звезды" class="star-img">
                     </div>
                     <div class="rating-value-div">
-                      <span class="rating-value">Рейтинг: 8.5</span>
+                      <span class="rating-value">Рейтинг: 8,5</span>
                     </div>
                   </div>
                 </div>
@@ -237,7 +235,7 @@
                       <img src="images/stars/4stars.svg" width="140" height="37" alt="Звезды" class="star-img">
                     </div>
                     <div class="rating-value-div">
-                      <span class="rating-value">Рейтинг: 9.2</span>
+                      <span class="rating-value">Рейтинг: 9,2</span>
                     </div>
                   </div>
                 </div>
@@ -259,7 +257,7 @@
                       <img src="images/stars/3stars.svg" width="140" height="37" alt="Звезды" class="star-img">
                     </div>
                     <div class="rating-value-div">
-                      <span class="rating-value">Рейтинг: 6.9</span>
+                      <span class="rating-value">Рейтинг: 6,9</span>
                     </div>
                   </div>
                 </div>
@@ -281,7 +279,7 @@
                       <img src="images/stars/2stars.svg" width="140" height="37" alt="Звезды" class="star-img">
                     </div>
                     <div class="rating-value-div">
-                      <span class="rating-value">Рейтинг: 5.0</span>
+                      <span class="rating-value">Рейтинг: 5,0</span>
                     </div>
                   </div>
                 </div>
@@ -312,8 +310,8 @@
         </section>
         <!-- блок подписки -->
         <section class="subscribe-section">
-          <h2 class="section-heading">Подпишитесь на рассылку?</h2>
-          <p class="section-paragraph">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <h2 class="section-heading">Подпишитесь на рассылку</h2>
+          <p class="section-paragraph">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <input type="email" id="subsribe-value" name="subscribe-input" placeholder="Ваш e-mail">
             <button class="subscribe-button button" type="submit">Подписаться</button>
@@ -378,6 +376,7 @@
         </div>
       </footer>
     </div>
+
   </body>
 
 </html>
