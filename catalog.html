@@ -133,23 +133,16 @@
               <fieldset class="catalog-filter-group price-filter-section">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                 <div class="price-wrapper">
-                  <div class="price-input">
+                  <label for="min-price">от</label>
+                  <input class="price-filter-input" name="min-price" id="min-price" placeholder="0" type="number">
+                  <label for="max-price">до</label>
+                  <input class="price-filter-input" name="max-price" id="max-price" placeholder="9000" type="number">
 
-                    <div class="input-wrapper first-input-wrapper">
-                      <label for="min-price">от</label>
-                      <input class="price-filter-input" name="min-price" id="min-price" value="0" type="number">
-                    </div>
-                    <div class="input-wrapper second-input-wrapper">
-                      <label for="max-price">до</label>
-                      <input class="price-filter-input" name="max-price" id="max-price" value="9000" type="number">
-                    </div>
-
-                  </div>
-                  <div class="price-scale">
-                    <div class="price-bar" style="left:0; width: 226px;">
-                      <button type="button" class="price-toggler price-min"></button>
-                      <button type="button" class="price-toggler price-max"></button>
-                    </div>
+                </div>
+                <div class="price-scale">
+                  <div class="price-bar" style="left:0; width: 226px;">
+                    <button type="button" class="price-toggler price-min"></button>
+                    <button type="button" class="price-toggler price-max"></button>
                   </div>
                 </div>
               </fieldset>

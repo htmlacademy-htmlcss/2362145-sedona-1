@@ -825,8 +825,7 @@ input:focus + .custom-checkbox {
 }
 
 .price-input {
-  margin-top: 32px;
-  display: flex;
+
 }
 
 .price-toggler {
@@ -865,26 +864,11 @@ input:focus + .custom-checkbox {
 
 .price-wrapper {
   min-width: 288px;
-  display: block;
+  margin-top: 32px;
+  display: flex;
 }
 
-.input-wrapper {
-  box-sizing: border-box;
-  position: relative;
-  background-color: #ffffff;
-}
-
-
-.first-input-wrapper {
-  border-radius: 4px 0 0 4px;
-  margin-right: 2px;
-}
-
-.second-input-wrapper {
-  border-radius: 0 4px 4px 0;
-}
-
-.input-wrapper label {
+.price-wrapper label {
   position: absolute;
   color: #000000;
   font: inherit;
@@ -900,7 +884,6 @@ input:focus + .custom-checkbox {
 .price-filter-input {
   display: block;
   width: 80px;
-  border: 0;
   font: inherit;
   font-size: 18px;
   font-weight: 700;
@@ -910,9 +893,12 @@ input:focus + .custom-checkbox {
   padding-inline: 20px 43px;
   background-color: #f2f2f2;
   border-radius: 4px 0 0 4px;
-  background-clip: padding-box;
   border: 2px solid #f2f2f2;
-  border: none;
+}
+
+.price-wrapper input:nth-of-type(2) {
+  margin-left: 2px;
+  border-radius: 0 4px 4px 0;
 }
 
 .price-filter-input::placeholder {
@@ -923,22 +909,19 @@ input:focus + .custom-checkbox {
   color: #000000;
 }
 
-.second-input-wrapper > .price-filter-input {
-  border-radius: 0 4px 4px 0;
-}
 
 .price-filter-input:hover {
   background-color: #e6e6e6;
   border-color: #e6e6e6;
 }
 
-.price-filter-input:focus-visible:placeholder-shown {
+.price-filter-input:focus {
   background-color: #e6e6e6;
   outline: 3px solid #83B3D3;
   border-color: #e6e6e6;
 }
 
-.price-filter-input:focus-visible:not(placeholder-shown) {
+.price-filter-input:not(:placeholder-shown) {
   background-color: #f2f2f2;
   outline: 0;
   border-color: #000000;
@@ -1201,6 +1184,7 @@ input:focus + .custom-checkbox {
 .pagination-item:not(:last-child) {
   margin-right: 8px;
 }
+
 
 .pagination-link {
   color: inherit;
