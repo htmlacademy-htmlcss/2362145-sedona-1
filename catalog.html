@@ -17,7 +17,7 @@
       <header class="main-header">
         <nav class="navigation">
           <a href="index.html">
-            <img src="images/logo.svg" width="140" height="70" alt="Логотип" class="logo">
+            <img src="images/logo.svg" width="138" height="70" alt="Логотип" class="logo">
           </a>
           <div class="navigation-catalog">
             <ul class="navigation-list">
@@ -133,11 +133,18 @@
               <fieldset class="catalog-filter-group price-filter-section">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                 <div class="price-wrapper">
-                  <label for="min-price">от</label>
-                  <input class="price-filter-input" name="min-price" id="min-price" placeholder="0" type="number">
-                  <label for="max-price">до</label>
-                  <input class="price-filter-input" name="max-price" id="max-price" placeholder="9000" type="number">
-
+                    <input class="price-filter-input" name="min-price" id="min-price" placeholder="0" type="number">
+                    <label for="min-price">
+                      <span class="price-input-span">
+                        от
+                      </span>
+                    </label>
+                    <input class="price-filter-input" name="max-price" id="max-price" placeholder="9000" type="number">
+                    <label for="max-price">
+                      <span class="price-input-span">
+                        до
+                      </span>
+                    </label>
                 </div>
                 <div class="price-scale">
                   <div class="price-bar" style="left:0; width: 226px;">

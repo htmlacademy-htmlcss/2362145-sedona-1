@@ -179,10 +179,6 @@ a.navigation-favorite-item {
   cursor: pointer;
 }
 
-.button:focus-visible {
-  outline: none;
-}
-
 .header-button {
   font-family: "PT Sans", sans-serif;
   padding: 8px 34px;
@@ -432,15 +428,20 @@ section:nth-of-type(4) {
 .subscribe-form input {
   width: 432px;
   padding-inline: 20px 0;
-  padding-block: 0;
+  padding-block: 14px;
   background-color: rgba(242, 242, 242, 1);
   border: 0;
   border-radius: 4px 0 0 4px;
-}
-
-.subscribe-form input:placeholder-shown {
   font-size: 18px;
   line-height: 24px;
+  font-family: "PT Sans", sans-serif;
+}
+
+.subscribe-form input::placeholder {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "PT Sans", sans-serif;
+  margin: 14px 20px;
 }
 
 .subscribe-button {
@@ -742,6 +743,7 @@ input:checked + .radiobox::before {
 .catalog-filter-item label:active .custom-checkbox {
   opacity: 0.3;
   box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.25);
+  outline: 3px solid #83B3D3;
 }
 
 
@@ -824,9 +826,7 @@ input:focus + .custom-checkbox {
   background-color: #ffffff;
 }
 
-.price-input {
-
-}
+.price-input {}
 
 .price-toggler {
   position: absolute;
@@ -869,17 +869,29 @@ input:focus + .custom-checkbox {
 }
 
 .price-wrapper label {
-  position: absolute;
+  position: relative;
+  display: block;
   color: #000000;
   font: inherit;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
-  right: 20px;
-  bottom: 12px;
-  opacity: 0.3;
+  bottom: -12px;
+  right: -20px;
+  height: 24px;
+  font-family: "PT Sans", sans-serif;
 }
 
+.price-input-span {
+  color: #000000;
+  font: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  position: absolute;
+  right: 40px;
+  opacity: 0.3;
+}
 
 .price-filter-input {
   display: block;
@@ -889,8 +901,8 @@ input:focus + .custom-checkbox {
   font-weight: 700;
   line-height: 24px;
   color: #000000;
-  padding-block: 12px;
-  padding-inline: 20px 43px;
+  padding-block: 10px;
+  padding-inline: 20px 39px;
   background-color: #f2f2f2;
   border-radius: 4px 0 0 4px;
   border: 2px solid #f2f2f2;
@@ -919,6 +931,7 @@ input:focus + .custom-checkbox {
   background-color: #e6e6e6;
   outline: 3px solid #83B3D3;
   border-color: #e6e6e6;
+  z-index: 1;
 }
 
 .price-filter-input:not(:placeholder-shown) {
@@ -1016,7 +1029,7 @@ input:focus + .custom-checkbox {
   background-position: center, center;
 }
 
-.button-item > button.active{
+.button-item > button.active {
   border: 2px solid #000000;
 }
 
@@ -1212,11 +1225,13 @@ input:focus + .custom-checkbox {
 .pagination-item a:focus-visible {
   background: rgba(104, 162, 202, 1);
   outline: none;
+  border-radius: 4px;
 }
 
 .pagination-item a:active {
   background: rgba(104, 162, 202, 1);
   color: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
 }
 
 .pagination-row li.active {
@@ -1226,6 +1241,7 @@ input:focus + .custom-checkbox {
 
 .pagination-item.active a:focus-visible {
   background-color: rgba(242, 242, 242, 1);
+  border-radius: 4px;
 }
 
 .pagination-item.active a:active {
@@ -1275,8 +1291,6 @@ input:focus + .custom-checkbox {
   width: 100%;
   display: flex;
   z-index: 1;
-  /* включть модальное */
-
 }
 
 .modal {
@@ -1286,7 +1300,6 @@ input:focus + .custom-checkbox {
   padding: 64px 70px;
   border-radius: 30px;
   min-width: 577px;
-  margin-top: 396px;
   box-shadow: 0px 25px 50px 0px #00000026;
 }
 
