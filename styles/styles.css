@@ -1291,6 +1291,8 @@ input:focus + .custom-checkbox {
   width: 100%;
   display: flex;
   z-index: 1;
+  /* выключенное модальное окно */
+  display: none;
 }
 
 .modal {
