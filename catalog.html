@@ -17,7 +17,7 @@
       <header class="main-header">
         <nav class="navigation">
           <a href="index.html">
-            <img src="images/logo.svg" width="140" height="70" alt="Логотип" class="logo">
+            <img src="images/logo.svg" width="138" height="70" alt="Логотип" class="logo">
           </a>
           <div class="navigation-catalog">
             <ul class="navigation-list">
@@ -65,7 +65,7 @@
             </ul>
           </header>
           <!-- форма в блоке -->
-          <form action="https://echo.htmlacademy.ru/" class="catalog-filter" method="get">
+          <form action="https://echo.htmlacademy.ru/" class="catalog-filter" method="get" name="form-search">
             <div class="first-filter-container">
               <!-- секция выбора инфраструктуры -->
               <fieldset class="catalog-filter-group button-filter">
@@ -73,7 +73,7 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="infrastructure">
-                      <input type="checkbox" name="pool" class="infrastructure-input visually-hidden">
+                      <input type="checkbox" name="pool" class="infrastructure-input visually-hidden" checked>
                       <span class="custom-checkbox"></span>
                       Бассейн
                     </label>
@@ -81,7 +81,7 @@
 
                   <li class="catalog-filter-item">
                     <label class="infrastructure">
-                      <input type="checkbox" name="parking" class="infrastructure-input visually-hidden">
+                      <input type="checkbox" name="parking" class="infrastructure-input visually-hidden" checked>
                       <span class="custom-checkbox"></span>
                       Парковка
                     </label>
@@ -98,12 +98,12 @@
 
               <!-- секция выбора типа жилья -->
               <fieldset class="catalog-filter-group button-filter">
-                <legend class="catalog-filter-title">Тип жилья:</legend>
+                <legend class="catalog-filter-title">Тип Жилья:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="infrastructure">
                       <input type="radio" name="apartment-type" class="infrastructure-input  visually-hidden"
-                        value="hotel">
+                        value="hotel" checked required>
                       <span class="custom-checkbox radiobox"></span>
                       Гостиница
                     </label>
@@ -112,7 +112,7 @@
                   <li class="catalog-filter-item">
                     <label class="infrastructure">
                       <input type="radio" name="apartment-type" class="infrastructure-input visually-hidden"
-                        value="motel">
+                        value="motel" required>
                       <span class="custom-checkbox radiobox"></span>
                       Мотель
                     </label>
@@ -120,7 +120,7 @@
                   <li class="catalog-filter-item">
                     <label class="infrastructure">
                       <input type="radio" name="apartment-type" class="infrastructure-input visually-hidden"
-                        value="apartments">
+                        value="apartments" required>
                       <span class="custom-checkbox radiobox"></span>
                       Апартаменты
                     </label>
@@ -130,14 +130,34 @@
             </div>
             <div class="second-filter-container">
               <!-- болванка для сортировки стоимости -->
-              <fieldset class="catalog-filter-group visually-hidden">
+              <fieldset class="catalog-filter-group price-filter-section">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+                <div class="price-wrapper">
+                    <input class="price-filter-input" name="min-price" id="min-price" placeholder="0" type="number">
+                    <label for="min-price">
+                      <span class="price-input-span">
+                        от
+                      </span>
+                    </label>
+                    <input class="price-filter-input" name="max-price" id="max-price" placeholder="9000" type="number">
+                    <label for="max-price">
+                      <span class="price-input-span">
+                        до
+                      </span>
+                    </label>
+                </div>
+                <div class="price-scale">
+                  <div class="price-bar" style="left:0; width: 226px;">
+                    <button type="button" class="price-toggler price-min"><span class="visually-hidden">Минимальная цена.</span></button>
+                    <button type="button" class="price-toggler price-max"><span class="visually-hidden">Максимальная цена.</span></button>
+                  </div>
+                </div>
               </fieldset>
               <!-- секция с кнопками -->
               <section class="catalog-filter-button">
                 <h3 class="visually-hidden">Список товаров с фильтрами</h3>
-                <button name="apply" type="submit" class="button apply-button">Применить</button>
-                <button name="reset" type="reset" class="button reset-button">сбросить</button>
+                <button class="button apply-button" type="submit">Применить</button>
+                <input id="form-search" name="reset" type="reset" class="button reset-button"></input>
               </section>
             </div>
           </form>
@@ -155,7 +175,7 @@
             <!-- список кнопок вида сортировки -->
             <ul class="view-list">
               <li class="button-item">
-                <button type="button" class="button button-card-show ">
+                <button type="button" class="button button-card-show active">
                   <span class="visually-hidden">Показать карточки</span>
                 </button>
               </li>
@@ -191,7 +211,7 @@
                       <img src="images/stars/4stars.svg" width="140" height="37" alt="Звезды" class="star-img">
                     </div>
                     <div class="rating-value-div">
-                      <span class="rating-value">Рейтинг: 8.5</span>
+                      <span class="rating-value">Рейтинг: 8,5</span>
                     </div>
                   </div>
                 </div>
@@ -213,7 +233,7 @@
                       <img src="images/stars/4stars.svg" width="140" height="37" alt="Звезды" class="star-img">
                     </div>
                     <div class="rating-value-div">
-                      <span class="rating-value">Рейтинг: 9.2</span>
+                      <span class="rating-value">Рейтинг: 9,2</span>
                     </div>
                   </div>
                 </div>
@@ -232,10 +252,10 @@
                     <button class="more-details-button button">Подробнее</button>
                     <button type="button" class="favorite-button button">В избранное</button>
                     <div class="star-item">
-                      <img src="images/stars/4stars.svg" width="140" height="37" alt="Звезды" class="star-img">
+                      <img src="images/stars/3stars.svg" width="140" height="37" alt="Звезды" class="star-img">
                     </div>
                     <div class="rating-value-div">
-                      <span class="rating-value">Рейтинг: 6.9</span>
+                      <span class="rating-value">Рейтинг: 6,9</span>
                     </div>
                   </div>
                 </div>
@@ -254,10 +274,10 @@
                     <button class="more-details-button button">Подробнее</button>
                     <button type="button" class="favorite-button button">В избранное</button>
                     <div class="star-item">
-                      <img src="images/stars/4stars.svg" width="140" height="37" alt="Звезды" class="star-img">
+                      <img src="images/stars/2stars.svg" width="140" height="37" alt="Звезды" class="star-img">
                     </div>
                     <div class="rating-value-div">
-                      <span class="rating-value">Рейтинг: 5.0</span>
+                      <span class="rating-value">Рейтинг: 5,0</span>
                     </div>
                   </div>
                 </div>
@@ -288,8 +308,8 @@
         </section>
         <!-- блок подписки -->
         <section class="subscribe-section">
-          <h2 class="section-heading">Подпишитесь на рассылку?</h2>
-          <p class="section-paragraph">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <h2 class="section-heading">Подпишитесь на рассылку</h2>
+          <p class="section-paragraph">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <input type="email" id="subsribe-value" name="subscribe-input" placeholder="Ваш e-mail">
             <button class="subscribe-button button" type="submit">Подписаться</button>
@@ -354,6 +374,7 @@
         </div>
       </footer>
     </div>
+
   </body>
 
 </html>

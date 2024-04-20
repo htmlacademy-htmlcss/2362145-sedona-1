@@ -44,7 +44,8 @@
               </li>
             </ul>
           </div>
-          <button class="header-button button" name="hotel-search-button button" type="button">Хочу сюда!</button>
+          <button class="header-button button" name="hotel-search-button button" type="button" href="catalog.html">Хочу
+            сюда!</button>
         </nav>
       </header>
       <main class="main-container">
@@ -76,7 +77,7 @@
             </li>
             <li class="advantages-item">
               <h3>Красивая дорога</h3>
-              <p class="advantages-paragraph">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              <p class="advantages-paragraph">Ехать в Седону из Лас-Вегаса<br>совсем не скучно!</p>
             </li>
             <li class="advantages-item">
               <h3>Мало туристов</h3>
@@ -101,31 +102,31 @@
           <ul class="advantages-list second-advantages-list">
             <li class="advantages-item second-advantages-item">
               <h3>Жильё</h3>
-              <p class="advantages-paragraph">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              <p class="advantages-paragraph">Рекомендуем пожить<br>в настоящем мотеле,<br> всё как в кино!</p>
             </li>
             <li class="advantages-item second-advantages-item">
               <h3>Еда</h3>
-              <p class="advantages-paragraph">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь</p>
+              <p class="advantages-paragraph">Всегда заказывайте<br> топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li class="advantages-item second-advantages-item">
               <h3>Сувениры</h3>
-              <p class="advantages-paragraph">Не только китайского, но и настоящего местного производства!</p>
+              <p class="advantages-paragraph">Не только китайского,<br> но и настоящего местного производства!</p>
             </li>
           </ul>
         </section>
         <!-- нижняя секция поиска отеля -->
         <section class="middle-section hotel-search-section">
-          <h2 class="section-heading">Заинтерисовались?</h2>
+          <h2 class="section-heading">Заинтересовались?</h2>
           <p class="section-paragraph">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения
             гостиниц
             в Седоне
           </p>
-          <button class="section-button button" name="hotel-search-button button" type="button">Поиск гостиницы в
-            Седоне</button>
+          <a class="section-button button" name="hotel-search-button button" href="/catalog.html">Поиск гостиницы в
+            Седоне</a>
         </section>
         <!-- секция подписки -->
         <section class="subscribe-section on-index">
-          <h2 class="section-heading">Подпишитесь на рассылку?</h2>
+          <h2 class="section-heading">Подпишитесь на рассылку</h2>
           <p class="section-paragraph">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <input type="email" id="subsribe-value" name="subscribe-input" placeholder="Ваш e-mail">
@@ -190,6 +191,91 @@
           </section>
         </div>
       </footer>
+    </div>
+    <div class="modal-container">
+      <div class="modal ">
+        <h2 class="modal-heading">Поиск гостиницы в Седоне</h2>
+        <div class="modal-content">
+          <form method="post" action="https://echo.htmlacademy.ru/" class="date-search-form">
+            <p class="modal-date-field">
+              <label for="check-in-date-input">Дата Заезда:
+              </label>
+              <input type="text" name="check-in-date" value="27 апреля 2020" id="check-in-date-input">
+              <span class="substring error">Мы не можем отправить вас в прошлое.</span>
+            </p>
+            <p class="modal-date-field">
+              <label for="departure-date-input">Дата Выезда:
+              </label>
+              <input type="text" name="departure-date" value="1 сентября 2023" id="departure-date-input">
+              <span class="substring">На эти даты есть свободные номера. Пока есть.</span>
+            </p>
+            <div class="people-field">
+              <p class="modal-peaple-field">
+                <label class="adult-people" for="adult-people">
+                  Взрослые:
+                </label>
+                <button class="people-minus-button people-scale-button" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="scale-icon" width="20" height="20" fill="currentColor"
+                    viewBox="0 0 20 20" fill-opacity="0.3">
+                    <path d="M3 9v2h14V9H3Z" />
+                  </svg>
+                  <span class="visually-hidden">Убавить</span>
+                </button>
+                <input type="number" id="adult-people" name="adult-people" class="people-input" value="2">
+                <button class="people-plus-button people-scale-button" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="scale-icon" width="20" height="20" fill="currentColor"
+                    viewBox="0 0 20 20" fill-opacity="0.3">
+                    <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
+                  </svg>
+                  <span class="visually-hidden">Добавить</span>
+                </button>
+              </p>
+              <p class="modal-peaple-field young-people-field">
+                <span class="young-people">
+
+                  <label class="young-people" for="young-people">
+                    Дети:
+                    <span class="importan-inform">
+
+                      <button type="button" class="importan-inform-button" aria-labelledby="importan-information">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 26 26">
+                          <circle cx="13" cy="13" r="13" fill="#83B3D3" />
+                          <path fill="#fff" fill-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z"
+                            clip-rule="evenodd" />
+                        </svg>
+                      </button>
+                      <span class="important-information-text" id="importan-information" role="tooltip">
+                        Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+                        размещаются бесплатно.
+                      </span>
+                    </span>
+                  </label>
+                </span>
+                <button class="people-minus-button people-scale-button" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="scale-icon" width="20" height="20" fill="currentColor"
+                    viewBox="0 0 20 20" fill-opacity="0.3">
+                    <path d="M3 9v2h14V9H3Z" />
+                  </svg>
+                  <span class="visually-hidden">Убавить</span>
+                </button>
+                <input type="number" id="young-people" name="young-people" class="people-input" value="2">
+                <button class="people-plus-button people-scale-button" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="scale-icon" width="20" height="20" fill="currentColor"
+                    viewBox="0 0 20 20" fill-opacity="0.3">
+                    <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
+                  </svg>
+                  <span class="visually-hidden">Добавить</span>
+                </button>
+              </p>
+            </div>
+            <button type="submit" class="button">Найти</button>
+          </form>
+        </div>
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть окно</span>
+        </button>
+      </div>
     </div>
   </body>
 
