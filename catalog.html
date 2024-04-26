@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=PT+Sans:wght@400;700&family=Roboto&display=swap"
       rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico/favicon-32x32.png">
   </head>
 
   <body>
@@ -133,23 +134,25 @@
               <fieldset class="catalog-filter-group price-filter-section">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                 <div class="price-wrapper">
-                    <input class="price-filter-input" name="min-price" id="min-price" placeholder="0" type="number">
-                    <label for="min-price">
-                      <span class="price-input-span">
-                        от
-                      </span>
-                    </label>
-                    <input class="price-filter-input" name="max-price" id="max-price" placeholder="9000" type="number">
-                    <label for="max-price">
-                      <span class="price-input-span">
-                        до
-                      </span>
-                    </label>
+                  <input class="price-filter-input" name="min-price" id="min-price" placeholder="0" type="number">
+                  <label for="min-price">
+                    <span class="price-input-span">
+                      от
+                    </span>
+                  </label>
+                  <input class="price-filter-input" name="max-price" id="max-price" placeholder="9000" type="number">
+                  <label for="max-price">
+                    <span class="price-input-span">
+                      до
+                    </span>
+                  </label>
                 </div>
                 <div class="price-scale">
                   <div class="price-bar" style="left:0; width: 226px;">
-                    <button type="button" class="price-toggler price-min"><span class="visually-hidden">Минимальная цена.</span></button>
-                    <button type="button" class="price-toggler price-max"><span class="visually-hidden">Максимальная цена.</span></button>
+                    <button type="button" class="price-toggler price-min"><span class="visually-hidden">Минимальная
+                        цена.</span></button>
+                    <button type="button" class="price-toggler price-max"><span class="visually-hidden">Максимальная
+                        цена.</span></button>
                   </div>
                 </div>
               </fieldset>
@@ -157,7 +160,7 @@
               <section class="catalog-filter-button">
                 <h3 class="visually-hidden">Список товаров с фильтрами</h3>
                 <button class="button apply-button" type="submit">Применить</button>
-                <input id="form-search" name="reset" type="reset" class="button reset-button"></input>
+                <button id="form-search" name="reset" type="reset" class="button reset-button">Сбросить</button>
               </section>
             </div>
           </form>
