@@ -160,7 +160,7 @@ min-width: 20px;
 }
 
 a.navigation-search-item {
-background-image: url("/images/icons/icon-search.svg");
+background-image: url("../images/icons/icon-search.svg");
 background-repeat: no-repeat;
 background-position: 50% 50%;
 padding-inline: 12px;
@@ -169,7 +169,7 @@ min-height: 20px;
 }
 
 a.navigation-favorite-item {
-background-image: url("/images/icons/icon-favorite.svg");
+background-image: url("../images/icons/icon-favorite.svg");
 background-repeat: no-repeat;
 background-position: 50% 50%;
 padding-inline: 12px;
