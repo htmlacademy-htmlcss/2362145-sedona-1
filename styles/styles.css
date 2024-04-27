@@ -866,11 +866,11 @@ input:focus + .custom-checkbox {
 
 .button-item .button:hover {
   background-color: rgb(255, 255, 255, 0.6);
-  border: 3px solid rgba(0, 0, 0, 1);
+  border: 2px solid rgba(0, 0, 0, 1);
 }
 
 .button-item .button:focus-visible {
-  border: 3px solid rgba(104, 162, 202, 1);
+  border: 2px solid rgba(104, 162, 202, 1);
   outline: none;
 }
 
@@ -1042,7 +1042,7 @@ input:focus + .custom-checkbox {
   background-color: #ffffff;
   height: 49px;
   margin-right: 70px;
-  border: 3px solid rgba(229, 229, 229, 1);
+  border: 2px solid rgba(229, 229, 229, 1);
   border-radius: 4px;
   font-size: 18px;
   line-height: 21px;
@@ -1079,7 +1079,7 @@ input:focus + .custom-checkbox {
 
 .button-card-show {
   background-color: #ffffff;
-  border: 3px solid rgba(229, 229, 229, 1);
+  border: 2px solid rgba(229, 229, 229, 1);
   background-image: url("../images/icons/view-icon.svg");
   background-repeat: no-repeat;
   background-size: auto auto;
@@ -1088,7 +1088,7 @@ input:focus + .custom-checkbox {
 
 .button-box-show {
   background-color: #ffffff;
-  border: 3px solid rgba(229, 229, 229, 1);
+  border: 2px solid rgba(229, 229, 229, 1);
   background-image: url("../images/icons/view-icon-1.svg");
   background-repeat: no-repeat;
   background-size: auto auto;
@@ -1097,7 +1097,7 @@ input:focus + .custom-checkbox {
 
 .button-list-show {
   background-color: #ffffff;
-  border: 3px solid rgba(229, 229, 229, 1);
+  border: 2px solid rgba(229, 229, 229, 1);
   background-image: url("../images/icons/view-icon-2.svg");
   background-repeat: no-repeat;
   background-size: auto auto;
@@ -1105,7 +1105,7 @@ input:focus + .custom-checkbox {
 }
 
 .button-item > button.active {
-  border: 3px solid #000000;
+  border: 2px solid #000000;
 }
 
 .view-list {
