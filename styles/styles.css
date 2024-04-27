@@ -1151,7 +1151,7 @@ input:focus + .custom-checkbox {
   object-fit: contain;
 }
 
-.catalog-item h4 {
+.catalog-item h3 {
   margin: 0;
   margin-top: 16px;
   grid-column: 1 / -1;
