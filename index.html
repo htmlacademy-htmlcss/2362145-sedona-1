@@ -202,14 +202,14 @@
             <p class="modal-date-field">
               <label for="check-in-date-input">Дата Заезда:
               </label>
-              <input type="text" class="date-input" name="check-in-date" placeholder="Укажите дату"
+              <input required type="text" class="date-input" name="check-in-date" placeholder="Укажите дату"
                 id="check-in-date-input">
               <span class="substring error">Мы не можем отправить вас в прошлое.</span>
             </p>
             <p class="modal-date-field">
               <label for="departure-date-input">Дата Выезда:
               </label>
-              <input type="text" name="departure-date" class="date-input" placeholder="Укажите дату"
+              <input required type="text" name="departure-date" class="date-input" placeholder="Укажите дату"
                 id="departure-date-input">
               <span class="substring">На эти даты есть свободные номера. Пока есть.</span>
             </p>
@@ -235,27 +235,23 @@
                 </button>
               </p>
               <p class="modal-peaple-field young-people-field">
-                <span class="young-people">
-
-                  <label class="young-people-label" for="young-people">
-                    Дети:
-                    <span class="importan-inform">
-
-                      <button type="button" class="importan-inform-button" id="young-people-button"
+                <label class="young-people-label" for="young-people">
+                  Дети:
+                  <span class="importan-inform">
+                    <span class="importan-inform-button" id="young-people-button"
                       aria-labelledby="importan-information">
 
                       <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 26 26">
                         <circle cx="13" cy="13" r="13" fill="#83B3D3" />
                         <path fill="#fff" fill-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" clip-rule="evenodd" />
                       </svg>
-                    </button>
+                    </span>
                     <span class="important-information-text" id="importan-information" role="tooltip">
                       Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
                       размещаются бесплатно.
                     </span>
-                  </label>
                   </span>
-                </span>
+                </label>
                 <button class="people-minus-button people-scale-button" type="button">
                   <svg xmlns="http://www.w3.org/2000/svg" class="scale-icon" width="20" height="20" fill="currentColor"
                     viewBox="0 0 20 20" fill-opacity="0.3">
