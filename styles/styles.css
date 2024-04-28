@@ -887,6 +887,8 @@ input:focus + .custom-checkbox {
   position: absolute;
   height: 4px;
   background-color: #ffffff;
+  left: 0;
+  width: 226px;
 }
 
 .price-toggler {
