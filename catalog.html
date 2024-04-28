@@ -4,12 +4,10 @@
   <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Седона</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=PT+Sans:wght@400;700&family=Roboto&display=swap"
-      rel="stylesheet">
+    <link rel="preconnect" href="/fonts/ptsans-400.woff2">
+    <link rel="preconnect" href="/fonts/ptsans-700.woff2">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico/favicon-32x32.png">
+    <link rel="icon" type="image/x-ico" sizes="32x32" href="/favicon/favicon.ico">
   </head>
 
   <body>
@@ -26,7 +24,7 @@
                 <a href="index.html" class="navigation-link">Главная</a>
               </li>
               <li class="navigation-item">
-                <a class="navigation-link">О Седоне</a>
+                <a class="navigation-link" href="#">О Седоне</a>
               </li>
               <li class="navigation-item navigation-item-active">
                 <a class="navigation-link" href="#">Гостиницы</a>
@@ -147,7 +145,7 @@
                   </label>
                 </div>
                 <div class="price-scale">
-                  <div class="price-bar" style="left:0; width: 226px;">
+                  <div class="price-bar">
                     <button class="price-toggler price-min" type="button"><span class="visually-hidden">Минимальная
                         цена.</span></button>
                     <button class="price-toggler price-max" type="button"><span class="visually-hidden">Максимальная
@@ -210,8 +208,21 @@
                     <span class="card-paragraph price">От 4000 ₽</span>
                     <a class="more-details-button button" href="#">Подробнее</a>
                     <button class="favorite-button button" type="button">В избранное</button>
-                    <div class="star-item">
-                      <img class="star-img" src="images/stars/4stars.svg" width="140" height="37" alt="Звезды">
+                    <div class="star-container">
+                      <ul class="star-list">
+                        <li class="star-item">
+                          <img src="/images/star.svg" alt="Звезда">
+                        </li>
+                        <li class="star-item">
+                          <img src="/images/star.svg" alt="Звезда">
+                        </li>
+                        <li class="star-item">
+                          <img src="/images/star.svg" alt="Звезда">
+                        </li>
+                        <li class="star-item">
+                          <img src="/images/star.svg" alt="Звезда">
+                        </li>
+                      </ul>
                     </div>
                     <div class="rating-value-div">
                       <span class="rating-value">Рейтинг: 8,5</span>
@@ -232,8 +243,21 @@
                     <span class="card-paragraph price">От 5000 ₽</span>
                     <a class="more-details-button button" href="#">Подробнее</a>
                     <button class="favorite-button active button" type="button">В избранном</button>
-                    <div class="star-item">
-                      <img class="star-img" src="images/stars/4stars.svg" width="140" height="37" alt="Звезды">
+                    <div class="star-container">
+                      <ul class="star-list">
+                        <li class="star-item">
+                          <img src="/images/star.svg" alt="Звезда">
+                        </li>
+                        <li class="star-item">
+                          <img src="/images/star.svg" alt="Звезда">
+                        </li>
+                        <li class="star-item">
+                          <img src="/images/star.svg" alt="Звезда">
+                        </li>
+                        <li class="star-item">
+                          <img src="/images/star.svg" alt="Звезда">
+                        </li>
+                      </ul>
                     </div>
                     <div class="rating-value-div">
                       <span class="rating-value">Рейтинг: 9,2</span>
@@ -254,8 +278,18 @@
                     <span class="card-paragraph price">От 2500 ₽</span>
                     <a class="more-details-button button" href="#">Подробнее</a>
                     <button class="favorite-button button" type="button">В избранное</button>
-                    <div class="star-item">
-                      <img class="star-img" src="images/stars/3stars.svg" width="140" height="37" alt="Звезды">
+                    <div class="star-container">
+                      <ul class="star-list">
+                        <li class="star-item">
+                          <img src="/images/star.svg" alt="Звезда">
+                        </li>
+                        <li class="star-item">
+                          <img src="/images/star.svg" alt="Звезда">
+                        </li>
+                        <li class="star-item">
+                          <img src="/images/star.svg" alt="Звезда">
+                        </li>
+                      </ul>
                     </div>
                     <div class="rating-value-div">
                       <span class="rating-value">Рейтинг: 6,9</span>
@@ -276,8 +310,15 @@
                     <span class="card-paragraph price">От 1500 ₽</span>
                     <a class="more-details-button button" href="#">Подробнее</a>
                     <button class="favorite-button button" type="button">В избранное</button>
-                    <div class="star-item">
-                      <img class="star-img" src="images/stars/2stars.svg" width="140" height="37" alt="Звезды">
+                    <div class="star-container">
+                      <ul class="star-list">
+                        <li class="star-item">
+                          <img src="/images/star.svg" alt="Звезда">
+                        </li>
+                        <li class="star-item">
+                          <img src="/images/star.svg" alt="Звезда">
+                        </li>
+                      </ul>
                     </div>
                     <div class="rating-value-div">
                       <span class="rating-value">Рейтинг: 5,0</span>
